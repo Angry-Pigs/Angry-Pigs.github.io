@@ -1,0 +1,321 @@
+\hypertarget{class_pig_script}{}\doxysection{Référence de la classe Pig\+Script}
+\label{class_pig_script}\index{PigScript@{PigScript}}
+
+
+Classe composée des fonctions permettant l\textquotesingle{}ajout d\textquotesingle{}une force au Pig, ça destruction, ces effets (d\textquotesingle{}active ou non), son Rigidbody. Classes utilisées\+: \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}} Classes l\textquotesingle{}utilisant \+: \mbox{\hyperlink{class_entity}{Entity}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}  
+
+
+Graphe d\textquotesingle{}héritage de Pig\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pig_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pig_script_a80b0788db6a57ce4b8dc10b46475a63f}{Push}} (Vector2 force)
+\begin{DoxyCompactList}\small\item\em Applique une force au Pig. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_a73b48566d737d9119d26ed2c55c53063}{Activate\+RB}} ()
+\begin{DoxyCompactList}\small\item\em Active le rigidbody. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_aea09279768980c25699b3339b1494759}{Des\+Activate\+RB}} ()
+\begin{DoxyCompactList}\small\item\em Désactive le rigidbody. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pig_script_a5fe84784136f4e32a2374200c6baaea8}{Get\+Type\+Pig}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la variable Type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pig_script_a5769925faa839d557115b9f4b309c1c6}{Get\+Is\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la variable is\+Ready. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pig_script_a67f6b1c9c9b21a1cb5c453031fbfb628}{Get\+Is\+Gone}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la variable is\+Gone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_a474817208931c332a98943cc5cceb49f}{Set\+Is\+Gone}} (bool is\+Gone)
+\begin{DoxyCompactList}\small\item\em Setter de la variable is\+Gone, la change par le paramètre. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pig_script_a907507dfee72fc8bd9ecec1e797e10c1}{Get\+Is\+Gone\+No\+Collide}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la variable is\+Gone\+No\+Collide. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_a205439dac3ff8d30a287d43be8aaf61e}{Set\+Is\+Gone\+No\+Collide}} (bool is\+Gone\+No\+Collide)
+\begin{DoxyCompactList}\small\item\em Setter de la variable is\+Gone\+No\+Collide, la change par le paramètre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_af8c4f9bc221456b4f1f7fbacc83491b1}{Set\+Is\+Ready}} (bool is\+Ready)
+\begin{DoxyCompactList}\small\item\em Setter de la variable is\+Ready, la change par le paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pig_script_a224f08647307d260df5c628baf7cf6c3}\label{class_pig_script_a224f08647307d260df5c628baf7cf6c3}} 
+bool {\bfseries explo\+Double} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pig_script_a2f48662cc6de1fe35ce5abebf4f30b4c}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Si le projectile est partie et si le joueur appuie sur l\textquotesingle{}écran pendant le trajet, alors lance l\textquotesingle{}effet associé au Pig. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_a8cd73acd1703463045e048d2696c8166}{On\+Collision\+Enter2D}} (Collision2D col)
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}il y a collision, le Pig est détruit dans 4 secondes \+: appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_adc6063af27a1a926696ef55e72c15683}{Effect1}} ()
+\begin{DoxyCompactList}\small\item\em Lance l\textquotesingle{}effet 1 \+: crée une explosion repoussant tout, détruisant instantannément l\textquotesingle{}acier et détruit les objets instanciés grace à l\textquotesingle{}appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_aa7e89ac27e69b8540211873864713ae3}{Effect2}} ()
+\begin{DoxyCompactList}\small\item\em Lance l\textquotesingle{}effet 2, augmente la taille du Pig puis le détruit grace à l\textquotesingle{}appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_a2c2964372bedde366e677842132d79e7}{Effect3}} ()
+\begin{DoxyCompactList}\small\item\em Lance l\textquotesingle{}effet 3, le Pig fonce vers le sol puis le détruit grace à l\textquotesingle{}appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_a0039a37698e3a4e980b60f067da0bf61}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialise rb et col . \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy}} (int time)
+\begin{DoxyCompactList}\small\item\em Détruit le Pig dans time secondes et prévient le \mbox{\hyperlink{class_manager_script}{Manager\+Script}} qu\textquotesingle{}il faut passer au Pig suivant (New\+Pig()). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pig_script_a84b37c44cd5c62a9e7a48490f744dcb3}\label{class_pig_script_a84b37c44cd5c62a9e7a48490f744dcb3}} 
+Rigidbody2D {\bfseries rb}
+\item 
+\mbox{\Hypertarget{class_pig_script_aff37ca48b43ce84b7049ab6ec7a6931e}\label{class_pig_script_aff37ca48b43ce84b7049ab6ec7a6931e}} 
+Circle\+Collider2D {\bfseries coll}
+\item 
+\mbox{\Hypertarget{class_pig_script_a625e33a4735221406c9c0d0f9715e86f}\label{class_pig_script_a625e33a4735221406c9c0d0f9715e86f}} 
+bool {\bfseries is\+Dead}
+\item 
+\mbox{\Hypertarget{class_pig_script_a649b29e9e65a877af96e58b5347a9b86}\label{class_pig_script_a649b29e9e65a877af96e58b5347a9b86}} 
+bool {\bfseries effect\+Active}
+\item 
+\mbox{\Hypertarget{class_pig_script_a5a25614363546200890170bc8113da3f}\label{class_pig_script_a5a25614363546200890170bc8113da3f}} 
+int {\bfseries effect\+NB}
+\item 
+\mbox{\Hypertarget{class_pig_script_ab7d6f39a57753b1b6d979b0f3d13c8ed}\label{class_pig_script_ab7d6f39a57753b1b6d979b0f3d13c8ed}} 
+Game\+Object {\bfseries explosion\+Effect}
+\item 
+\mbox{\Hypertarget{class_pig_script_a0937bd61ca802f44837ad82704639374}\label{class_pig_script_a0937bd61ca802f44837ad82704639374}} 
+bool {\bfseries is\+Gone}
+\item 
+\mbox{\Hypertarget{class_pig_script_ab56feece586d8f9feefc6fefc285d46e}\label{class_pig_script_ab56feece586d8f9feefc6fefc285d46e}} 
+bool {\bfseries is\+Gone\+No\+Collide}
+\item 
+\mbox{\Hypertarget{class_pig_script_ac550c9e5337e3ab58878ab13a343d8c9}\label{class_pig_script_ac550c9e5337e3ab58878ab13a343d8c9}} 
+bool {\bfseries is\+Ready}
+\item 
+\mbox{\Hypertarget{class_pig_script_a86788b688c0398b50c70a81d2526cc23}\label{class_pig_script_a86788b688c0398b50c70a81d2526cc23}} 
+string {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe composée des fonctions permettant l\textquotesingle{}ajout d\textquotesingle{}une force au Pig, ça destruction, ces effets (d\textquotesingle{}active ou non), son Rigidbody. Classes utilisées\+: \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}} Classes l\textquotesingle{}utilisant \+: \mbox{\hyperlink{class_entity}{Entity}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}} 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_pig_script_a73b48566d737d9119d26ed2c55c53063}\label{class_pig_script_a73b48566d737d9119d26ed2c55c53063}} 
+\index{PigScript@{PigScript}!ActivateRB@{ActivateRB}}
+\index{ActivateRB@{ActivateRB}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{ActivateRB()}{ActivateRB()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Activate\+RB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le rigidbody. 
+
+\mbox{\Hypertarget{class_pig_script_a0039a37698e3a4e980b60f067da0bf61}\label{class_pig_script_a0039a37698e3a4e980b60f067da0bf61}} 
+\index{PigScript@{PigScript}!Awake@{Awake}}
+\index{Awake@{Awake}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialise rb et col . 
+
+\mbox{\Hypertarget{class_pig_script_aea09279768980c25699b3339b1494759}\label{class_pig_script_aea09279768980c25699b3339b1494759}} 
+\index{PigScript@{PigScript}!DesActivateRB@{DesActivateRB}}
+\index{DesActivateRB@{DesActivateRB}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{DesActivateRB()}{DesActivateRB()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Des\+Activate\+RB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Désactive le rigidbody. 
+
+~\newline
+ \mbox{\Hypertarget{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}\label{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}} 
+\index{PigScript@{PigScript}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily IEnumerator Pig\+Script.\+Destroy (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Détruit le Pig dans time secondes et prévient le \mbox{\hyperlink{class_manager_script}{Manager\+Script}} qu\textquotesingle{}il faut passer au Pig suivant (New\+Pig()). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em time} & temps avant la destruction du Pig\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pig_script_adc6063af27a1a926696ef55e72c15683}\label{class_pig_script_adc6063af27a1a926696ef55e72c15683}} 
+\index{PigScript@{PigScript}!Effect1@{Effect1}}
+\index{Effect1@{Effect1}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Effect1()}{Effect1()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Effect1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lance l\textquotesingle{}effet 1 \+: crée une explosion repoussant tout, détruisant instantannément l\textquotesingle{}acier et détruit les objets instanciés grace à l\textquotesingle{}appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. 
+
+\mbox{\Hypertarget{class_pig_script_aa7e89ac27e69b8540211873864713ae3}\label{class_pig_script_aa7e89ac27e69b8540211873864713ae3}} 
+\index{PigScript@{PigScript}!Effect2@{Effect2}}
+\index{Effect2@{Effect2}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Effect2()}{Effect2()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Effect2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lance l\textquotesingle{}effet 2, augmente la taille du Pig puis le détruit grace à l\textquotesingle{}appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. 
+
+\mbox{\Hypertarget{class_pig_script_a2c2964372bedde366e677842132d79e7}\label{class_pig_script_a2c2964372bedde366e677842132d79e7}} 
+\index{PigScript@{PigScript}!Effect3@{Effect3}}
+\index{Effect3@{Effect3}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Effect3()}{Effect3()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Effect3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lance l\textquotesingle{}effet 3, le Pig fonce vers le sol puis le détruit grace à l\textquotesingle{}appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. 
+
+\mbox{\Hypertarget{class_pig_script_a67f6b1c9c9b21a1cb5c453031fbfb628}\label{class_pig_script_a67f6b1c9c9b21a1cb5c453031fbfb628}} 
+\index{PigScript@{PigScript}!GetIsGone@{GetIsGone}}
+\index{GetIsGone@{GetIsGone}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{GetIsGone()}{GetIsGone()}}
+{\footnotesize\ttfamily bool Pig\+Script.\+Get\+Is\+Gone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la variable is\+Gone. 
+
+\begin{DoxyReturn}{Renvoie}
+is\+Gone
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pig_script_a907507dfee72fc8bd9ecec1e797e10c1}\label{class_pig_script_a907507dfee72fc8bd9ecec1e797e10c1}} 
+\index{PigScript@{PigScript}!GetIsGoneNoCollide@{GetIsGoneNoCollide}}
+\index{GetIsGoneNoCollide@{GetIsGoneNoCollide}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{GetIsGoneNoCollide()}{GetIsGoneNoCollide()}}
+{\footnotesize\ttfamily bool Pig\+Script.\+Get\+Is\+Gone\+No\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la variable is\+Gone\+No\+Collide. 
+
+\begin{DoxyReturn}{Renvoie}
+is\+Gone\+No\+Collide
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pig_script_a5769925faa839d557115b9f4b309c1c6}\label{class_pig_script_a5769925faa839d557115b9f4b309c1c6}} 
+\index{PigScript@{PigScript}!GetIsReady@{GetIsReady}}
+\index{GetIsReady@{GetIsReady}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{GetIsReady()}{GetIsReady()}}
+{\footnotesize\ttfamily bool Pig\+Script.\+Get\+Is\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la variable is\+Ready. 
+
+\begin{DoxyReturn}{Renvoie}
+is\+Ready
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pig_script_a5fe84784136f4e32a2374200c6baaea8}\label{class_pig_script_a5fe84784136f4e32a2374200c6baaea8}} 
+\index{PigScript@{PigScript}!GetTypePig@{GetTypePig}}
+\index{GetTypePig@{GetTypePig}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{GetTypePig()}{GetTypePig()}}
+{\footnotesize\ttfamily string Pig\+Script.\+Get\+Type\+Pig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la variable Type. 
+
+\begin{DoxyReturn}{Renvoie}
+type
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pig_script_a8cd73acd1703463045e048d2696c8166}\label{class_pig_script_a8cd73acd1703463045e048d2696c8166}} 
+\index{PigScript@{PigScript}!OnCollisionEnter2D@{OnCollisionEnter2D}}
+\index{OnCollisionEnter2D@{OnCollisionEnter2D}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{OnCollisionEnter2D()}{OnCollisionEnter2D()}}
+{\footnotesize\ttfamily void Pig\+Script.\+On\+Collision\+Enter2D (\begin{DoxyParamCaption}\item[{Collision2D}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+S\textquotesingle{}il y a collision, le Pig est détruit dans 4 secondes \+: appel de la coroutine \mbox{\hyperlink{class_pig_script_a9848df0c5c307242f45e8d511bdf875a}{Destroy()}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em col} & Collision2D stockant l\textquotesingle{}objet de collision\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pig_script_a80b0788db6a57ce4b8dc10b46475a63f}\label{class_pig_script_a80b0788db6a57ce4b8dc10b46475a63f}} 
+\index{PigScript@{PigScript}!Push@{Push}}
+\index{Push@{Push}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Push (\begin{DoxyParamCaption}\item[{Vector2}]{force }\end{DoxyParamCaption})}
+
+
+
+Applique une force au Pig. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em force} & Force applique au Pig\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pig_script_a474817208931c332a98943cc5cceb49f}\label{class_pig_script_a474817208931c332a98943cc5cceb49f}} 
+\index{PigScript@{PigScript}!SetIsGone@{SetIsGone}}
+\index{SetIsGone@{SetIsGone}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{SetIsGone()}{SetIsGone()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Set\+Is\+Gone (\begin{DoxyParamCaption}\item[{bool}]{is\+Gone }\end{DoxyParamCaption})}
+
+
+
+Setter de la variable is\+Gone, la change par le paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em is\+Gone} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pig_script_a205439dac3ff8d30a287d43be8aaf61e}\label{class_pig_script_a205439dac3ff8d30a287d43be8aaf61e}} 
+\index{PigScript@{PigScript}!SetIsGoneNoCollide@{SetIsGoneNoCollide}}
+\index{SetIsGoneNoCollide@{SetIsGoneNoCollide}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{SetIsGoneNoCollide()}{SetIsGoneNoCollide()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Set\+Is\+Gone\+No\+Collide (\begin{DoxyParamCaption}\item[{bool}]{is\+Gone\+No\+Collide }\end{DoxyParamCaption})}
+
+
+
+Setter de la variable is\+Gone\+No\+Collide, la change par le paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em is\+Gone\+No\+Collide} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pig_script_af8c4f9bc221456b4f1f7fbacc83491b1}\label{class_pig_script_af8c4f9bc221456b4f1f7fbacc83491b1}} 
+\index{PigScript@{PigScript}!SetIsReady@{SetIsReady}}
+\index{SetIsReady@{SetIsReady}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{SetIsReady()}{SetIsReady()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Set\+Is\+Ready (\begin{DoxyParamCaption}\item[{bool}]{is\+Ready }\end{DoxyParamCaption})}
+
+
+
+Setter de la variable is\+Ready, la change par le paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em is\+Ready} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pig_script_a2f48662cc6de1fe35ce5abebf4f30b4c}\label{class_pig_script_a2f48662cc6de1fe35ce5abebf4f30b4c}} 
+\index{PigScript@{PigScript}!Update@{Update}}
+\index{Update@{Update}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Si le projectile est partie et si le joueur appuie sur l\textquotesingle{}écran pendant le trajet, alors lance l\textquotesingle{}effet associé au Pig. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Unity\+Project/\+Angry Pig Game/\+Assets/\+Script/Pig\+Script.\+cs\end{DoxyCompactItemize}
