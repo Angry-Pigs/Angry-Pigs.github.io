@@ -1,0 +1,205 @@
+\hypertarget{class_manager_script}{}\doxysection{Référence de la classe Manager\+Script}
+\label{class_manager_script}\index{ManagerScript@{ManagerScript}}
+
+
+Classe possédant les méthodes permettant le lancer de Pig et le passage au prochain Pig. Classes utilisées\+: \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_trajectory_script}{Trajectory\+Script}}, \mbox{\hyperlink{class_sling_shot_script}{Sling\+Shot\+Script}}, \mbox{\hyperlink{class_pig_script}{Pig\+Script}} Classes l\textquotesingle{}utilisant \+: \mbox{\hyperlink{class_dialog_script}{Dialog\+Script}}, \mbox{\hyperlink{class_didact_script}{Didact\+Script}}, \mbox{\hyperlink{class_pig_script}{Pig\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}  
+
+
+Graphe d\textquotesingle{}héritage de Manager\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manager_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_manager_script_a012b57bed8f7be03df9209a34f3d83eb}{New\+Pig}} ()
+\begin{DoxyCompactList}\small\item\em Passe au nouveau Pig ou termine la partie s\textquotesingle{}il n\textquotesingle{}y en a plus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_script_abae60b066753fbd0945797b0ec70af13}{Set\+Force}} (float multi)
+\begin{DoxyCompactList}\small\item\em Setter de la variable push\+Force, multiplie push\+Force par multi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_manager_script_aa18499f7faa72e86e48c7d1988e287db}\label{class_manager_script_aa18499f7faa72e86e48c7d1988e287db}} 
+\mbox{\hyperlink{class_pig_script}{Pig\+Script}}\mbox{[}$\,$\mbox{]} {\bfseries pigs}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_manager_script_a5063aeefa79a1d6e56cfd1018aea3910}\label{class_manager_script_a5063aeefa79a1d6e56cfd1018aea3910}} 
+static \mbox{\hyperlink{class_manager_script}{Manager\+Script}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_manager_script_a70c096ffb8ab7c8a8bab73bee1992869}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Initialise la caméra et positionne le premier Pig prêt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_script_ab58182b7b824eedad9f8e57f141e7236}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Méthode principale vérifiant l\textquotesingle{}action du joueur \+: appuie, bouge, enlève son doigt, lancent les méthodes en conséquence de ses actions. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_manager_script_a0af48f9071772bdb91b77314f23d86a3}{Stop\+Drag}} ()
+\begin{DoxyCompactList}\small\item\em Annule le lancer, remets le pig sur la fronde à sa position initiale. Attends un peu avant que les boutons soient réactivés. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_script_a3495660940528f553d6c3da76a27a14c}{On\+Drag}} ()
+\begin{DoxyCompactList}\small\item\em Bouge le Pig en fonction de la position du doigt avec une limite de distance (constante) utilisant la position d\textquotesingle{}origine du point, met à jour la vue de la trajectoire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_script_ab661779b06128552c662a94b2b7b6c80}{On\+Drag\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Active la trajectoire, désactive les boutons, active la vue de la trajectoire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_script_a0bd7a7c6b15085215393ef7ee92877bf}{On\+Drag\+End}} ()
+\begin{DoxyCompactList}\small\item\em Donne une force au Pig pour qu\textquotesingle{}il s\textquotesingle{}en aille, désactive la vue de la trajectoire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_script_a5370a2fcea5333140cd01649f628016c}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Déclaration de l\textquotesingle{}instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_manager_script_a3d4076ee42cec8b28c4782732bd266f6}\label{class_manager_script_a3d4076ee42cec8b28c4782732bd266f6}} 
+Vector2 {\bfseries start\+Point}
+\item 
+\mbox{\Hypertarget{class_manager_script_a289c086d331364b0a3bc5b0f40d78e6f}\label{class_manager_script_a289c086d331364b0a3bc5b0f40d78e6f}} 
+Vector2 {\bfseries end\+Point}
+\item 
+\mbox{\Hypertarget{class_manager_script_adc44cd477ba6f194c9779e71468581ff}\label{class_manager_script_adc44cd477ba6f194c9779e71468581ff}} 
+Vector2 {\bfseries direction}
+\item 
+\mbox{\Hypertarget{class_manager_script_ac1ee2d8eda02c790d08304e1cb44b930}\label{class_manager_script_ac1ee2d8eda02c790d08304e1cb44b930}} 
+Vector2 {\bfseries force}
+\item 
+\mbox{\Hypertarget{class_manager_script_a6da608c6adec3fe234ac9fe35bcd15ee}\label{class_manager_script_a6da608c6adec3fe234ac9fe35bcd15ee}} 
+bool {\bfseries is\+Draging}
+\item 
+\mbox{\Hypertarget{class_manager_script_a85d2d2db91406314298367db051d8351}\label{class_manager_script_a85d2d2db91406314298367db051d8351}} 
+float {\bfseries current\+Dist}
+\item 
+\mbox{\Hypertarget{class_manager_script_a88977a19072982f8c763e3bfe42a6d41}\label{class_manager_script_a88977a19072982f8c763e3bfe42a6d41}} 
+int {\bfseries ind\+Ball}
+\item 
+\mbox{\Hypertarget{class_manager_script_ac05443d4fc5e4bc4ac6a80e4e44d191b}\label{class_manager_script_ac05443d4fc5e4bc4ac6a80e4e44d191b}} 
+\mbox{\hyperlink{class_trajectory_script}{Trajectory\+Script}} {\bfseries trajectory}
+\item 
+\mbox{\Hypertarget{class_manager_script_a3a3949b87c55a48546f551590aaf37c3}\label{class_manager_script_a3a3949b87c55a48546f551590aaf37c3}} 
+\mbox{\hyperlink{class_sling_shot_script}{Sling\+Shot\+Script}} {\bfseries sling}
+\item 
+\mbox{\Hypertarget{class_manager_script_aa8250ef2304a7592b0d850bc58b4cdc7}\label{class_manager_script_aa8250ef2304a7592b0d850bc58b4cdc7}} 
+float {\bfseries distance\+Max}
+\item 
+\mbox{\Hypertarget{class_manager_script_a4d27c65104549bf8754568e19a9c6b6f}\label{class_manager_script_a4d27c65104549bf8754568e19a9c6b6f}} 
+float {\bfseries push\+Force}
+\item 
+\mbox{\Hypertarget{class_manager_script_a65053d35d2b2c6cd3b6c7c68bfbe8b5d}\label{class_manager_script_a65053d35d2b2c6cd3b6c7c68bfbe8b5d}} 
+Vector2 {\bfseries hook}
+\item 
+\mbox{\Hypertarget{class_manager_script_aac4be70984f594d0c36a8d25f302493f}\label{class_manager_script_aac4be70984f594d0c36a8d25f302493f}} 
+Camera {\bfseries cam}
+\item 
+\mbox{\Hypertarget{class_manager_script_a8651ee28de5eec9bbd6cb6334ac99511}\label{class_manager_script_a8651ee28de5eec9bbd6cb6334ac99511}} 
+Touch {\bfseries touch} = new Touch()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe possédant les méthodes permettant le lancer de Pig et le passage au prochain Pig. Classes utilisées\+: \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_trajectory_script}{Trajectory\+Script}}, \mbox{\hyperlink{class_sling_shot_script}{Sling\+Shot\+Script}}, \mbox{\hyperlink{class_pig_script}{Pig\+Script}} Classes l\textquotesingle{}utilisant \+: \mbox{\hyperlink{class_dialog_script}{Dialog\+Script}}, \mbox{\hyperlink{class_didact_script}{Didact\+Script}}, \mbox{\hyperlink{class_pig_script}{Pig\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}} 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_manager_script_a5370a2fcea5333140cd01649f628016c}\label{class_manager_script_a5370a2fcea5333140cd01649f628016c}} 
+\index{ManagerScript@{ManagerScript}!Awake@{Awake}}
+\index{Awake@{Awake}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Manager\+Script.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Déclaration de l\textquotesingle{}instance 
+
+\mbox{\Hypertarget{class_manager_script_a012b57bed8f7be03df9209a34f3d83eb}\label{class_manager_script_a012b57bed8f7be03df9209a34f3d83eb}} 
+\index{ManagerScript@{ManagerScript}!NewPig@{NewPig}}
+\index{NewPig@{NewPig}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{NewPig()}{NewPig()}}
+{\footnotesize\ttfamily void Manager\+Script.\+New\+Pig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Passe au nouveau Pig ou termine la partie s\textquotesingle{}il n\textquotesingle{}y en a plus. 
+
+\mbox{\Hypertarget{class_manager_script_a3495660940528f553d6c3da76a27a14c}\label{class_manager_script_a3495660940528f553d6c3da76a27a14c}} 
+\index{ManagerScript@{ManagerScript}!OnDrag@{OnDrag}}
+\index{OnDrag@{OnDrag}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{OnDrag()}{OnDrag()}}
+{\footnotesize\ttfamily void Manager\+Script.\+On\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bouge le Pig en fonction de la position du doigt avec une limite de distance (constante) utilisant la position d\textquotesingle{}origine du point, met à jour la vue de la trajectoire. 
+
+\mbox{\Hypertarget{class_manager_script_a0bd7a7c6b15085215393ef7ee92877bf}\label{class_manager_script_a0bd7a7c6b15085215393ef7ee92877bf}} 
+\index{ManagerScript@{ManagerScript}!OnDragEnd@{OnDragEnd}}
+\index{OnDragEnd@{OnDragEnd}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{OnDragEnd()}{OnDragEnd()}}
+{\footnotesize\ttfamily void Manager\+Script.\+On\+Drag\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Donne une force au Pig pour qu\textquotesingle{}il s\textquotesingle{}en aille, désactive la vue de la trajectoire. 
+
+\mbox{\Hypertarget{class_manager_script_ab661779b06128552c662a94b2b7b6c80}\label{class_manager_script_ab661779b06128552c662a94b2b7b6c80}} 
+\index{ManagerScript@{ManagerScript}!OnDragStart@{OnDragStart}}
+\index{OnDragStart@{OnDragStart}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{OnDragStart()}{OnDragStart()}}
+{\footnotesize\ttfamily void Manager\+Script.\+On\+Drag\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Active la trajectoire, désactive les boutons, active la vue de la trajectoire. 
+
+\mbox{\Hypertarget{class_manager_script_abae60b066753fbd0945797b0ec70af13}\label{class_manager_script_abae60b066753fbd0945797b0ec70af13}} 
+\index{ManagerScript@{ManagerScript}!SetForce@{SetForce}}
+\index{SetForce@{SetForce}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{SetForce()}{SetForce()}}
+{\footnotesize\ttfamily void Manager\+Script.\+Set\+Force (\begin{DoxyParamCaption}\item[{float}]{multi }\end{DoxyParamCaption})}
+
+
+
+Setter de la variable push\+Force, multiplie push\+Force par multi. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em multi} & multiplicateur de la force\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_manager_script_a70c096ffb8ab7c8a8bab73bee1992869}\label{class_manager_script_a70c096ffb8ab7c8a8bab73bee1992869}} 
+\index{ManagerScript@{ManagerScript}!Start@{Start}}
+\index{Start@{Start}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Manager\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialise la caméra et positionne le premier Pig prêt. 
+
+\mbox{\Hypertarget{class_manager_script_a0af48f9071772bdb91b77314f23d86a3}\label{class_manager_script_a0af48f9071772bdb91b77314f23d86a3}} 
+\index{ManagerScript@{ManagerScript}!StopDrag@{StopDrag}}
+\index{StopDrag@{StopDrag}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{StopDrag()}{StopDrag()}}
+{\footnotesize\ttfamily IEnumerator Manager\+Script.\+Stop\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Annule le lancer, remets le pig sur la fronde à sa position initiale. Attends un peu avant que les boutons soient réactivés. 
+
+\begin{DoxyReturn}{Renvoie}
+0.\+2f d\textquotesingle{}attente avant la réactivation des boutons
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_manager_script_ab58182b7b824eedad9f8e57f141e7236}\label{class_manager_script_ab58182b7b824eedad9f8e57f141e7236}} 
+\index{ManagerScript@{ManagerScript}!Update@{Update}}
+\index{Update@{Update}!ManagerScript@{ManagerScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Manager\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Méthode principale vérifiant l\textquotesingle{}action du joueur \+: appuie, bouge, enlève son doigt, lancent les méthodes en conséquence de ses actions. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Unity\+Project/\+Angry Pig Game/\+Assets/\+Script/Manager\+Script.\+cs\end{DoxyCompactItemize}
