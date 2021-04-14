@@ -1,0 +1,133 @@
+\hypertarget{class_entity}{}\doxysection{Référence de la classe Entity}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+Classe composée de fonction permettant de gérer tout objet pouvant perdre de la vie \+: Birds,Blocks et TNT. Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_pig_script}{Pig\+Script}} Classes l\textquotesingle{}utilisant \+: \mbox{\hyperlink{class_explosion_script}{Explosion\+Script}},  
+
+
+Graphe d\textquotesingle{}héritage de Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_a32e253b6506806b673aeb253001165b2}{kill\+Explo}} ()
+\begin{DoxyCompactList}\small\item\em Appel la fonction Die, permet d\textquotesingle{}être appelé lors d\textquotesingle{}une collision provoquant la destruction directe de l\textquotesingle{}objet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_a49dc52b8e254f4bdb4c648a533e4caae}\label{class_entity_a49dc52b8e254f4bdb4c648a533e4caae}} 
+enum class {\bfseries Form} \{ {\bfseries circle}
+, {\bfseries box}
+, {\bfseries triangle}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_afb10403e14873605974a9d61f6cc5001}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant de gérer la destruction d\textquotesingle{}un objet lance un son, fais gagner des points, instancie objet explosion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a48e542e9fe9b1caba6238c33e45ef21a}{On\+Collision\+Enter2D}} (Collision2D col)
+\begin{DoxyCompactList}\small\item\em Fonction lance lors de la collision \+: enlève de la vie à l\textquotesingle{}objet et change son Sprite en fonction de sa vie restante, le détruit si ça vie atteint 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a4c7a596bcc77bccc78c16ca6eedd5cd5}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Appel la fonction Increase\+Current\+Enemy de \mbox{\hyperlink{class_u_i_script}{UIScript}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_a5081fe927c3db8c427da7919c5eadd6b}\label{class_entity_a5081fe927c3db8c427da7919c5eadd6b}} 
+Game\+Object {\bfseries explosion}
+\item 
+\mbox{\Hypertarget{class_entity_a813e60ad5b666751cc0530f18f65d97c}\label{class_entity_a813e60ad5b666751cc0530f18f65d97c}} 
+Game\+Object {\bfseries pop\+Up\+Score}
+\item 
+\mbox{\Hypertarget{class_entity_a0bd7a46640c3f78bf74110479926e4f8}\label{class_entity_a0bd7a46640c3f78bf74110479926e4f8}} 
+Sprite {\bfseries sprite1}
+\item 
+\mbox{\Hypertarget{class_entity_aade2b7d8a3292a1a6c633cd61a4dff1e}\label{class_entity_aade2b7d8a3292a1a6c633cd61a4dff1e}} 
+Sprite {\bfseries sprite2}
+\item 
+\mbox{\Hypertarget{class_entity_ad0a0a8c566f06deca711d718000ac5cd}\label{class_entity_ad0a0a8c566f06deca711d718000ac5cd}} 
+int {\bfseries score}
+\item 
+\mbox{\Hypertarget{class_entity_a839c3217e325fa1e9e85fac6e8884c31}\label{class_entity_a839c3217e325fa1e9e85fac6e8884c31}} 
+float {\bfseries health}
+\item 
+\mbox{\Hypertarget{class_entity_a6a71e9948a6dff68b09e5ca19730e227}\label{class_entity_a6a71e9948a6dff68b09e5ca19730e227}} 
+bool {\bfseries is\+Bird}
+\item 
+\mbox{\Hypertarget{class_entity_a55beec8a10fb07154d1a912ae4c7aac3}\label{class_entity_a55beec8a10fb07154d1a912ae4c7aac3}} 
+Form {\bfseries enume}
+\item 
+\mbox{\Hypertarget{class_entity_a02d3db953721fe634b49edba6058d47a}\label{class_entity_a02d3db953721fe634b49edba6058d47a}} 
+string {\bfseries type}
+\item 
+\mbox{\Hypertarget{class_entity_afc9554e2f5bd68b2d2a0486ab0f1c8a4}\label{class_entity_afc9554e2f5bd68b2d2a0486ab0f1c8a4}} 
+float {\bfseries current\+Health}
+\item 
+\mbox{\Hypertarget{class_entity_a08ac2e884a256c48955da91aeb749e6c}\label{class_entity_a08ac2e884a256c48955da91aeb749e6c}} 
+bool {\bfseries lim1}
+\item 
+\mbox{\Hypertarget{class_entity_acc17c81dce7a7e0e8db01a0829829eee}\label{class_entity_acc17c81dce7a7e0e8db01a0829829eee}} 
+bool {\bfseries lim2}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe composée de fonction permettant de gérer tout objet pouvant perdre de la vie \+: Birds,Blocks et TNT. Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_pig_script}{Pig\+Script}} Classes l\textquotesingle{}utilisant \+: \mbox{\hyperlink{class_explosion_script}{Explosion\+Script}}, 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_entity_a4c7a596bcc77bccc78c16ca6eedd5cd5}\label{class_entity_a4c7a596bcc77bccc78c16ca6eedd5cd5}} 
+\index{Entity@{Entity}!Awake@{Awake}}
+\index{Awake@{Awake}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Entity.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Appel la fonction Increase\+Current\+Enemy de \mbox{\hyperlink{class_u_i_script}{UIScript}}. 
+
+\mbox{\Hypertarget{class_entity_afb10403e14873605974a9d61f6cc5001}\label{class_entity_afb10403e14873605974a9d61f6cc5001}} 
+\index{Entity@{Entity}!Die@{Die}}
+\index{Die@{Die}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Entity.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction permettant de gérer la destruction d\textquotesingle{}un objet lance un son, fais gagner des points, instancie objet explosion. 
+
+\mbox{\Hypertarget{class_entity_a32e253b6506806b673aeb253001165b2}\label{class_entity_a32e253b6506806b673aeb253001165b2}} 
+\index{Entity@{Entity}!killExplo@{killExplo}}
+\index{killExplo@{killExplo}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{killExplo()}{killExplo()}}
+{\footnotesize\ttfamily void Entity.\+kill\+Explo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Appel la fonction Die, permet d\textquotesingle{}être appelé lors d\textquotesingle{}une collision provoquant la destruction directe de l\textquotesingle{}objet. 
+
+\mbox{\Hypertarget{class_entity_a48e542e9fe9b1caba6238c33e45ef21a}\label{class_entity_a48e542e9fe9b1caba6238c33e45ef21a}} 
+\index{Entity@{Entity}!OnCollisionEnter2D@{OnCollisionEnter2D}}
+\index{OnCollisionEnter2D@{OnCollisionEnter2D}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{OnCollisionEnter2D()}{OnCollisionEnter2D()}}
+{\footnotesize\ttfamily void Entity.\+On\+Collision\+Enter2D (\begin{DoxyParamCaption}\item[{Collision2D}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fonction lance lors de la collision \+: enlève de la vie à l\textquotesingle{}objet et change son Sprite en fonction de sa vie restante, le détruit si ça vie atteint 0. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em col} & Collision2D stockant l\textquotesingle{}objet de collision\\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Unity\+Project/\+Angry Pig Game/\+Assets/\+Script/Entity.\+cs\end{DoxyCompactItemize}

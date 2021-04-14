@@ -1,0 +1,229 @@
+\hypertarget{class_menu_script}{}\doxysection{Référence de la classe Menu\+Script}
+\label{class_menu_script}\index{MenuScript@{MenuScript}}
+
+
+Classe composée des fonctions permettant \+: l\textquotesingle{}interaction et l\textquotesingle{}action de chaque bouton du menu, de créer ces boutons. Utilisé\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}} Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}} Classes l\textquotesingle{}utilisant \+: /  
+
+
+Graphe d\textquotesingle{}héritage de Menu\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_menu_script_a1c4098a9dc10b2288594438329545f99}{Button\+Opt}} ()
+\begin{DoxyCompactList}\small\item\em Active le panel Option, désactive le panel Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_a26d3912cb180534629ccc0dee470b0b4}{Button\+Play}} ()
+\begin{DoxyCompactList}\small\item\em Active le panel World, désactive le panel Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_ae67ff2c0b5c176e9307e04b5493a403c}{Button\+Stop\+Opt}} ()
+\begin{DoxyCompactList}\small\item\em Active le panel Menu, désactive le panel Option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_ae12744a9dabc39678b148efd6926396b}{Button\+Stop\+Play}} ()
+\begin{DoxyCompactList}\small\item\em Active le panel Menu, désactive le panel World. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_a46001cd68187e16d749f1234b94f8153}{Button\+On}} ()
+\begin{DoxyCompactList}\small\item\em Active le son (jouer un son pour indiquer le bon fonctionnement, la musique de fond commence). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_a6a500284dc625b9df240ad7044137b72}{Button\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Désactive le son. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_a9677a4d51cd9a7ffe1dc2600f0fb7b02}{Button\+Back\+World}} (int ind)
+\begin{DoxyCompactList}\small\item\em Désactive le panel Lvl numero ind et active le panel World. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_menu_script_a7e50d38073f9796c3035ab0b5a562003}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Si c\textquotesingle{}est le premier lancé du jeu, instancie et déclare chaque variable en mémoire, appel la fonction \mbox{\hyperlink{class_menu_script_adb71c17c7401a5866eebf57b315d3683}{Create\+Buttons()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_a48312f5d0b9a5a2eeaed7812b3668506}{Button\+Lvl}} (int ind)
+\begin{DoxyCompactList}\small\item\em Charge la scène ind (Lvl correspondant). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_a91f97052d34d0863da0838db9d36b63a}{Button\+World}} (int ind)
+\begin{DoxyCompactList}\small\item\em Active le panel Lvl ind et désactive le panel World. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_af754a87566b507e0dad2890ba6b2e5f5}{Create\+Buttons\+Lvl}} (int ind)
+\begin{DoxyCompactList}\small\item\em Création des boutons Lvl dans chaque panel Lvl, définit leur action lors de l\textquotesingle{}appui sur l\textquotesingle{}un de ces boutons, affiche le nombre d\textquotesingle{}étoiles gagné pour chaque Lvl (les Lvl non débloqués ne sont pas intéragisable). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_script_adb71c17c7401a5866eebf57b315d3683}{Create\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em Création des bouétons World dans le panel World, définit leur action lors de l\textquotesingle{}appui sur l\textquotesingle{}un de ces boutons, appel de la fonction \mbox{\hyperlink{class_menu_script_af754a87566b507e0dad2890ba6b2e5f5}{Create\+Buttons\+Lvl()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}\label{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}} 
+Game\+Object {\bfseries panel\+World}
+\item 
+\mbox{\Hypertarget{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}\label{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}} 
+Game\+Object {\bfseries panel\+Option}
+\item 
+\mbox{\Hypertarget{class_menu_script_a909d078ab222ad770bd8db8617d1811b}\label{class_menu_script_a909d078ab222ad770bd8db8617d1811b}} 
+Game\+Object {\bfseries panel\+Menu}
+\item 
+\mbox{\Hypertarget{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}\label{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}} 
+Game\+Object {\bfseries prfb\+Button\+Lvl}
+\item 
+\mbox{\Hypertarget{class_menu_script_a8e19e9da924962de57047247f356a554}\label{class_menu_script_a8e19e9da924962de57047247f356a554}} 
+Game\+Object {\bfseries prfb\+Button\+World}
+\item 
+\mbox{\Hypertarget{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}\label{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries panel\+Lvl}
+\item 
+\mbox{\Hypertarget{class_menu_script_afab55a518154fdd5227539362ce1b8e9}\label{class_menu_script_afab55a518154fdd5227539362ce1b8e9}} 
+Transform {\bfseries panel\+World\+Place}
+\item 
+\mbox{\Hypertarget{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}\label{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}} 
+Transform\mbox{[}$\,$\mbox{]} {\bfseries panel\+Lvl\+Place}
+\item 
+\mbox{\Hypertarget{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}\label{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}} 
+int {\bfseries nb\+World}
+\item 
+\mbox{\Hypertarget{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}\label{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}} 
+int {\bfseries nb\+Lvl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe composée des fonctions permettant \+: l\textquotesingle{}interaction et l\textquotesingle{}action de chaque bouton du menu, de créer ces boutons. Utilisé\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}} Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}} Classes l\textquotesingle{}utilisant \+: / 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_menu_script_a9677a4d51cd9a7ffe1dc2600f0fb7b02}\label{class_menu_script_a9677a4d51cd9a7ffe1dc2600f0fb7b02}} 
+\index{MenuScript@{MenuScript}!ButtonBackWorld@{ButtonBackWorld}}
+\index{ButtonBackWorld@{ButtonBackWorld}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonBackWorld()}{ButtonBackWorld()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Back\+World (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})}
+
+
+
+Désactive le panel Lvl numero ind et active le panel World. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ind} & indice du panel Lvl\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_script_a48312f5d0b9a5a2eeaed7812b3668506}\label{class_menu_script_a48312f5d0b9a5a2eeaed7812b3668506}} 
+\index{MenuScript@{MenuScript}!ButtonLvl@{ButtonLvl}}
+\index{ButtonLvl@{ButtonLvl}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonLvl()}{ButtonLvl()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Lvl (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Charge la scène ind (Lvl correspondant). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ind} & indice du lvl\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_script_a6a500284dc625b9df240ad7044137b72}\label{class_menu_script_a6a500284dc625b9df240ad7044137b72}} 
+\index{MenuScript@{MenuScript}!ButtonOff@{ButtonOff}}
+\index{ButtonOff@{ButtonOff}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonOff()}{ButtonOff()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Désactive le son. 
+
+\mbox{\Hypertarget{class_menu_script_a46001cd68187e16d749f1234b94f8153}\label{class_menu_script_a46001cd68187e16d749f1234b94f8153}} 
+\index{MenuScript@{MenuScript}!ButtonOn@{ButtonOn}}
+\index{ButtonOn@{ButtonOn}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonOn()}{ButtonOn()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le son (jouer un son pour indiquer le bon fonctionnement, la musique de fond commence). 
+
+\mbox{\Hypertarget{class_menu_script_a1c4098a9dc10b2288594438329545f99}\label{class_menu_script_a1c4098a9dc10b2288594438329545f99}} 
+\index{MenuScript@{MenuScript}!ButtonOpt@{ButtonOpt}}
+\index{ButtonOpt@{ButtonOpt}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonOpt()}{ButtonOpt()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Opt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le panel Option, désactive le panel Menu. 
+
+\mbox{\Hypertarget{class_menu_script_a26d3912cb180534629ccc0dee470b0b4}\label{class_menu_script_a26d3912cb180534629ccc0dee470b0b4}} 
+\index{MenuScript@{MenuScript}!ButtonPlay@{ButtonPlay}}
+\index{ButtonPlay@{ButtonPlay}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonPlay()}{ButtonPlay()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le panel World, désactive le panel Menu. 
+
+\mbox{\Hypertarget{class_menu_script_ae67ff2c0b5c176e9307e04b5493a403c}\label{class_menu_script_ae67ff2c0b5c176e9307e04b5493a403c}} 
+\index{MenuScript@{MenuScript}!ButtonStopOpt@{ButtonStopOpt}}
+\index{ButtonStopOpt@{ButtonStopOpt}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonStopOpt()}{ButtonStopOpt()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Stop\+Opt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le panel Menu, désactive le panel Option. 
+
+\mbox{\Hypertarget{class_menu_script_ae12744a9dabc39678b148efd6926396b}\label{class_menu_script_ae12744a9dabc39678b148efd6926396b}} 
+\index{MenuScript@{MenuScript}!ButtonStopPlay@{ButtonStopPlay}}
+\index{ButtonStopPlay@{ButtonStopPlay}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonStopPlay()}{ButtonStopPlay()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Stop\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le panel Menu, désactive le panel World. 
+
+\mbox{\Hypertarget{class_menu_script_a91f97052d34d0863da0838db9d36b63a}\label{class_menu_script_a91f97052d34d0863da0838db9d36b63a}} 
+\index{MenuScript@{MenuScript}!ButtonWorld@{ButtonWorld}}
+\index{ButtonWorld@{ButtonWorld}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonWorld()}{ButtonWorld()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+World (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Active le panel Lvl ind et désactive le panel World. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ind} & indice du panel Lvl\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_script_adb71c17c7401a5866eebf57b315d3683}\label{class_menu_script_adb71c17c7401a5866eebf57b315d3683}} 
+\index{MenuScript@{MenuScript}!CreateButtons@{CreateButtons}}
+\index{CreateButtons@{CreateButtons}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{CreateButtons()}{CreateButtons()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Create\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Création des bouétons World dans le panel World, définit leur action lors de l\textquotesingle{}appui sur l\textquotesingle{}un de ces boutons, appel de la fonction \mbox{\hyperlink{class_menu_script_af754a87566b507e0dad2890ba6b2e5f5}{Create\+Buttons\+Lvl()}} 
+
+\mbox{\Hypertarget{class_menu_script_af754a87566b507e0dad2890ba6b2e5f5}\label{class_menu_script_af754a87566b507e0dad2890ba6b2e5f5}} 
+\index{MenuScript@{MenuScript}!CreateButtonsLvl@{CreateButtonsLvl}}
+\index{CreateButtonsLvl@{CreateButtonsLvl}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{CreateButtonsLvl()}{CreateButtonsLvl()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Create\+Buttons\+Lvl (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Création des boutons Lvl dans chaque panel Lvl, définit leur action lors de l\textquotesingle{}appui sur l\textquotesingle{}un de ces boutons, affiche le nombre d\textquotesingle{}étoiles gagné pour chaque Lvl (les Lvl non débloqués ne sont pas intéragisable). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ind} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_script_a7e50d38073f9796c3035ab0b5a562003}\label{class_menu_script_a7e50d38073f9796c3035ab0b5a562003}} 
+\index{MenuScript@{MenuScript}!Start@{Start}}
+\index{Start@{Start}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Si c\textquotesingle{}est le premier lancé du jeu, instancie et déclare chaque variable en mémoire, appel la fonction \mbox{\hyperlink{class_menu_script_adb71c17c7401a5866eebf57b315d3683}{Create\+Buttons()}}. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Unity\+Project/\+Angry Pig Game/\+Assets/\+Script/Menu\+Script.\+cs\end{DoxyCompactItemize}
