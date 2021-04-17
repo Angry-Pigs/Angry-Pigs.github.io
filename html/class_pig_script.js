@@ -13,6 +13,7 @@ var class_pig_script =
     [ "GetTypePig", "class_pig_script.html#a5fe84784136f4e32a2374200c6baaea8", null ],
     [ "OnCollisionEnter2D", "class_pig_script.html#a8cd73acd1703463045e048d2696c8166", null ],
     [ "Push", "class_pig_script.html#a80b0788db6a57ce4b8dc10b46475a63f", null ],
+    [ "SetExploDOuble", "class_pig_script.html#ada5c7c4600aaf47671245dbf7e0d7782", null ],
     [ "SetIsGone", "class_pig_script.html#a474817208931c332a98943cc5cceb49f", null ],
     [ "SetIsGoneNoCollide", "class_pig_script.html#a205439dac3ff8d30a287d43be8aaf61e", null ],
     [ "SetIsReady", "class_pig_script.html#af8c4f9bc221456b4f1f7fbacc83491b1", null ],

@@ -33,12 +33,9 @@ bool \mbox{\hyperlink{class_pig_script_a907507dfee72fc8bd9ecec1e797e10c1}{Get\+I
 void \mbox{\hyperlink{class_pig_script_a205439dac3ff8d30a287d43be8aaf61e}{Set\+Is\+Gone\+No\+Collide}} (bool \mbox{\hyperlink{class_pig_script_ab56feece586d8f9feefc6fefc285d46e}{is\+Gone\+No\+Collide}})
 \begin{DoxyCompactList}\small\item\em Setter de la variable is\+Gone\+No\+Collide, la change par le paramètre. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_pig_script_af8c4f9bc221456b4f1f7fbacc83491b1}{Set\+Is\+Ready}} (bool \mbox{\hyperlink{class_pig_script_ac550c9e5337e3ab58878ab13a343d8c9}{is\+Ready}})
-\begin{DoxyCompactList}\small\item\em Setter de la variable is\+Ready, la change par le paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Attributs publics}
-\begin{DoxyCompactItemize}
-\item 
-bool \mbox{\hyperlink{class_pig_script_a224f08647307d260df5c628baf7cf6c3}{explo\+Double}} = false
-\begin{DoxyCompactList}\small\item\em Stocke si le rayon de l\textquotesingle{}explosion est doublé ou non. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Setter de la variable is\+Ready, la change par le paramètre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pig_script_ada5c7c4600aaf47671245dbf7e0d7782}{Set\+Explo\+DOuble}} (bool \mbox{\hyperlink{class_pig_script_a224f08647307d260df5c628baf7cf6c3}{explo\+Double}})
+\begin{DoxyCompactList}\small\item\em Setter de la variable explo\+Double, la change par le paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,6 +60,8 @@ Rigidbody2D \mbox{\hyperlink{class_pig_script_a84b37c44cd5c62a9e7a48490f744dcb3}
 \begin{DoxyCompactList}\small\item\em Stocke le Rigidbody2D du cochon. \end{DoxyCompactList}\item 
 Circle\+Collider2D \mbox{\hyperlink{class_pig_script_aff37ca48b43ce84b7049ab6ec7a6931e}{coll}}
 \begin{DoxyCompactList}\small\item\em Stocke le Circle\+Collider2D du cochon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pig_script_a224f08647307d260df5c628baf7cf6c3}{explo\+Double}} = false
+\begin{DoxyCompactList}\small\item\em Stocke si le rayon de l\textquotesingle{}explosion est doublé ou non. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_pig_script_a625e33a4735221406c9c0d0f9715e86f}{is\+Dead}}
 \begin{DoxyCompactList}\small\item\em Stocke si le cochon est mort ou non. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_pig_script_a649b29e9e65a877af96e58b5347a9b86}{effect\+Active}}
@@ -248,6 +247,21 @@ Applique une force au Pig.
 {\em force} & Force applique au Pig\\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_pig_script_ada5c7c4600aaf47671245dbf7e0d7782}\label{class_pig_script_ada5c7c4600aaf47671245dbf7e0d7782}} 
+\index{PigScript@{PigScript}!SetExploDOuble@{SetExploDOuble}}
+\index{SetExploDOuble@{SetExploDOuble}!PigScript@{PigScript}}
+\doxysubsubsection{\texorpdfstring{SetExploDOuble()}{SetExploDOuble()}}
+{\footnotesize\ttfamily void Pig\+Script.\+Set\+Explo\+DOuble (\begin{DoxyParamCaption}\item[{bool}]{explo\+Double }\end{DoxyParamCaption})}
+
+
+
+Setter de la variable explo\+Double, la change par le paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em explo\+Double} & Valeure par laquelle est changé explo\+Double\\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_pig_script_a474817208931c332a98943cc5cceb49f}\label{class_pig_script_a474817208931c332a98943cc5cceb49f}} 
 \index{PigScript@{PigScript}!SetIsGone@{SetIsGone}}
 \index{SetIsGone@{SetIsGone}!PigScript@{PigScript}}
@@ -260,7 +274,7 @@ Setter de la variable is\+Gone, la change par le paramètre.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em is\+Gone} & \\
+{\em is\+Gone} & Valeure par laquelle est changé is\+Gone\\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_pig_script_a205439dac3ff8d30a287d43be8aaf61e}\label{class_pig_script_a205439dac3ff8d30a287d43be8aaf61e}} 
@@ -275,7 +289,7 @@ Setter de la variable is\+Gone\+No\+Collide, la change par le paramètre.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em is\+Gone\+No\+Collide} & \\
+{\em is\+Gone\+No\+Collide} & Valeure par laquelle est changé is\+Gone\+No\+Collide\\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_pig_script_af8c4f9bc221456b4f1f7fbacc83491b1}\label{class_pig_script_af8c4f9bc221456b4f1f7fbacc83491b1}} 
@@ -290,7 +304,7 @@ Setter de la variable is\+Ready, la change par le paramètre.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em is\+Ready} & \\
+{\em is\+Ready} & Valeure par laquelle est changé is\+Ready\\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_pig_script_a2f48662cc6de1fe35ce5abebf4f30b4c}\label{class_pig_script_a2f48662cc6de1fe35ce5abebf4f30b4c}} 
@@ -340,7 +354,7 @@ Stocke le numéro de l\textquotesingle{}effet voulu.
 \index{PigScript@{PigScript}!exploDouble@{exploDouble}}
 \index{exploDouble@{exploDouble}!PigScript@{PigScript}}
 \doxysubsubsection{\texorpdfstring{exploDouble}{exploDouble}}
-{\footnotesize\ttfamily bool Pig\+Script.\+explo\+Double = false}
+{\footnotesize\ttfamily bool Pig\+Script.\+explo\+Double = false\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
