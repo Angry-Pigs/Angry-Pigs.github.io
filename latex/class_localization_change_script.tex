@@ -14,25 +14,30 @@ Graphe d\textquotesingle{}héritage de Localization\+Change\+Script\+:\begin{fig
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_localization_change_script_a2f7b1349f1547cb6bb3c663533a27090}{Button\+Change\+Script}} ()
-\begin{DoxyCompactList}\small\item\em Change la langue et change l\textquotesingle{}image du drapeau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_localization_change_script_a2ee53d342b186f9536390a630fd61768}{Button\+Change\+Script\+Fr}} ()
+\begin{DoxyCompactList}\small\item\em Change la langue de en à fr et change l\textquotesingle{}image des drapeaus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_localization_change_script_a65e4cf0891f9cf3e8104321e15dd56d2}{Button\+Change\+Script\+En}} ()
+\begin{DoxyCompactList}\small\item\em Change la langue de fr à en et change l\textquotesingle{}image des drapeaus. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_localization_change_script_a03b72d63228703519ecf5c0261947869}{Start}} ()
-\begin{DoxyCompactList}\small\item\em Initialise l\textquotesingle{}image du drapeau (fr ou en) en fonction de la langue sauvegardée en mémoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialise l\textquotesingle{}image du drapeau grisé ou non (fr et en) en fonction de la langue sauvegardée en mémoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_localization_change_script_a5e8a8bedc01fd405e4b9b2969aba6711}\label{class_localization_change_script_a5e8a8bedc01fd405e4b9b2969aba6711}} 
-Sprite {\bfseries en\+Flag}
-\item 
-\mbox{\Hypertarget{class_localization_change_script_a40cd27ab824c018dc36d4e0255d54108}\label{class_localization_change_script_a40cd27ab824c018dc36d4e0255d54108}} 
-Sprite {\bfseries fr\+Flag}
-\item 
-\mbox{\Hypertarget{class_localization_change_script_a8dfbbc49dd40e41a6d0668d44ef92d30}\label{class_localization_change_script_a8dfbbc49dd40e41a6d0668d44ef92d30}} 
-Image {\bfseries image\+Flag}
-\end{DoxyCompactItemize}
+Sprite \mbox{\hyperlink{class_localization_change_script_a5e8a8bedc01fd405e4b9b2969aba6711}{en\+Flag}}
+\begin{DoxyCompactList}\small\item\em Sprite du drapeau anglais. \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_localization_change_script_a15b9bd1caa3d068b0674d0fd5c762b5c}{en\+Flag\+Grey}}
+\begin{DoxyCompactList}\small\item\em Sprite du drapeau anglais grisé. \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_localization_change_script_a40cd27ab824c018dc36d4e0255d54108}{fr\+Flag}}
+\begin{DoxyCompactList}\small\item\em Sprite du drapeau français. \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_localization_change_script_a48908fd275aa5ad140addb297a876574}{fr\+Flag\+Grey}}
+\begin{DoxyCompactList}\small\item\em Sprite du drapeau français grisé. \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_localization_change_script_a405eb33f521a7cdb8cc6d7c36da87959}{image\+Flag\+En}}
+\begin{DoxyCompactList}\small\item\em Image où les sprites des drapeaux anglais sont mis. \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_localization_change_script_a6900f55f63756161d6315fa95daea6c8}{image\+Flag\+Fr}}
+\begin{DoxyCompactList}\small\item\em Image où les sprites des drapeaux français sont mis. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -41,15 +46,25 @@ Classe gérant le passage à une autre langue via le bouton du panel Option. Cla
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\Hypertarget{class_localization_change_script_a2f7b1349f1547cb6bb3c663533a27090}\label{class_localization_change_script_a2f7b1349f1547cb6bb3c663533a27090}} 
-\index{LocalizationChangeScript@{LocalizationChangeScript}!ButtonChangeScript@{ButtonChangeScript}}
-\index{ButtonChangeScript@{ButtonChangeScript}!LocalizationChangeScript@{LocalizationChangeScript}}
-\doxysubsubsection{\texorpdfstring{ButtonChangeScript()}{ButtonChangeScript()}}
-{\footnotesize\ttfamily void Localization\+Change\+Script.\+Button\+Change\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_localization_change_script_a65e4cf0891f9cf3e8104321e15dd56d2}\label{class_localization_change_script_a65e4cf0891f9cf3e8104321e15dd56d2}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!ButtonChangeScriptEn@{ButtonChangeScriptEn}}
+\index{ButtonChangeScriptEn@{ButtonChangeScriptEn}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{ButtonChangeScriptEn()}{ButtonChangeScriptEn()}}
+{\footnotesize\ttfamily void Localization\+Change\+Script.\+Button\+Change\+Script\+En (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Change la langue et change l\textquotesingle{}image du drapeau. 
+Change la langue de fr à en et change l\textquotesingle{}image des drapeaus. 
+
+\mbox{\Hypertarget{class_localization_change_script_a2ee53d342b186f9536390a630fd61768}\label{class_localization_change_script_a2ee53d342b186f9536390a630fd61768}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!ButtonChangeScriptFr@{ButtonChangeScriptFr}}
+\index{ButtonChangeScriptFr@{ButtonChangeScriptFr}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{ButtonChangeScriptFr()}{ButtonChangeScriptFr()}}
+{\footnotesize\ttfamily void Localization\+Change\+Script.\+Button\+Change\+Script\+Fr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Change la langue de en à fr et change l\textquotesingle{}image des drapeaus. 
 
 \mbox{\Hypertarget{class_localization_change_script_a03b72d63228703519ecf5c0261947869}\label{class_localization_change_script_a03b72d63228703519ecf5c0261947869}} 
 \index{LocalizationChangeScript@{LocalizationChangeScript}!Start@{Start}}
@@ -59,7 +74,70 @@ Change la langue et change l\textquotesingle{}image du drapeau.
 
 
 
-Initialise l\textquotesingle{}image du drapeau (fr ou en) en fonction de la langue sauvegardée en mémoire. 
+Initialise l\textquotesingle{}image du drapeau grisé ou non (fr et en) en fonction de la langue sauvegardée en mémoire. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_localization_change_script_a5e8a8bedc01fd405e4b9b2969aba6711}\label{class_localization_change_script_a5e8a8bedc01fd405e4b9b2969aba6711}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!enFlag@{enFlag}}
+\index{enFlag@{enFlag}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{enFlag}{enFlag}}
+{\footnotesize\ttfamily Sprite Localization\+Change\+Script.\+en\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite du drapeau anglais. 
+
+\mbox{\Hypertarget{class_localization_change_script_a15b9bd1caa3d068b0674d0fd5c762b5c}\label{class_localization_change_script_a15b9bd1caa3d068b0674d0fd5c762b5c}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!enFlagGrey@{enFlagGrey}}
+\index{enFlagGrey@{enFlagGrey}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{enFlagGrey}{enFlagGrey}}
+{\footnotesize\ttfamily Sprite Localization\+Change\+Script.\+en\+Flag\+Grey\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite du drapeau anglais grisé. 
+
+\mbox{\Hypertarget{class_localization_change_script_a40cd27ab824c018dc36d4e0255d54108}\label{class_localization_change_script_a40cd27ab824c018dc36d4e0255d54108}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!frFlag@{frFlag}}
+\index{frFlag@{frFlag}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{frFlag}{frFlag}}
+{\footnotesize\ttfamily Sprite Localization\+Change\+Script.\+fr\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite du drapeau français. 
+
+\mbox{\Hypertarget{class_localization_change_script_a48908fd275aa5ad140addb297a876574}\label{class_localization_change_script_a48908fd275aa5ad140addb297a876574}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!frFlagGrey@{frFlagGrey}}
+\index{frFlagGrey@{frFlagGrey}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{frFlagGrey}{frFlagGrey}}
+{\footnotesize\ttfamily Sprite Localization\+Change\+Script.\+fr\+Flag\+Grey\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite du drapeau français grisé. 
+
+\mbox{\Hypertarget{class_localization_change_script_a405eb33f521a7cdb8cc6d7c36da87959}\label{class_localization_change_script_a405eb33f521a7cdb8cc6d7c36da87959}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!imageFlagEn@{imageFlagEn}}
+\index{imageFlagEn@{imageFlagEn}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{imageFlagEn}{imageFlagEn}}
+{\footnotesize\ttfamily Image Localization\+Change\+Script.\+image\+Flag\+En\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Image où les sprites des drapeaux anglais sont mis. 
+
+\mbox{\Hypertarget{class_localization_change_script_a6900f55f63756161d6315fa95daea6c8}\label{class_localization_change_script_a6900f55f63756161d6315fa95daea6c8}} 
+\index{LocalizationChangeScript@{LocalizationChangeScript}!imageFlagFr@{imageFlagFr}}
+\index{imageFlagFr@{imageFlagFr}!LocalizationChangeScript@{LocalizationChangeScript}}
+\doxysubsubsection{\texorpdfstring{imageFlagFr}{imageFlagFr}}
+{\footnotesize\ttfamily Image Localization\+Change\+Script.\+image\+Flag\+Fr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Image où les sprites des drapeaux français sont mis. 
 
 
 

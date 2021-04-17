@@ -2,7 +2,7 @@
 \label{class_dialog_script}\index{DialogScript@{DialogScript}}
 
 
-Classe qui gère les dialogues (dialogues, passage au dialogue suivant). Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}} Classes l\textquotesingle{}utilisant \+: /  
+Classe qui gère les dialogues (dialogues, passage au dialogue suivant). Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}}, \mbox{\hyperlink{class_localization_script}{Localization\+Script}} Classes l\textquotesingle{}utilisant \+: /  
 
 
 Graphe d\textquotesingle{}héritage de Dialog\+Script\+:\begin{figure}[H]
@@ -26,25 +26,20 @@ IEnumerator \mbox{\hyperlink{class_dialog_script_a092dd34ad6f32525298a7d3b83dc1a
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_dialog_script_a609204367a8b18dcf0dc56dcdd875641}\label{class_dialog_script_a609204367a8b18dcf0dc56dcdd875641}} 
-\mbox{\hyperlink{class_localization_script}{Localization\+Script}} {\bfseries text}
-\item 
-\mbox{\Hypertarget{class_dialog_script_a4028b47157511bb865220d9e72c51836}\label{class_dialog_script_a4028b47157511bb865220d9e72c51836}} 
-Game\+Object {\bfseries Panel\+Didact}
-\item 
-\mbox{\Hypertarget{class_dialog_script_ae78f10a23edc16d5ef9a805e8d33af66}\label{class_dialog_script_ae78f10a23edc16d5ef9a805e8d33af66}} 
-bool {\bfseries is\+End\+Scene}
-\item 
-\mbox{\Hypertarget{class_dialog_script_aafe08b7a68788ba7a2db3e4fbad628f1}\label{class_dialog_script_aafe08b7a68788ba7a2db3e4fbad628f1}} 
-int\mbox{[}$\,$\mbox{]} {\bfseries tableref}
-\item 
-\mbox{\Hypertarget{class_dialog_script_aeae1493557d46893c2ea536453190386}\label{class_dialog_script_aeae1493557d46893c2ea536453190386}} 
-int {\bfseries ind}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_localization_script}{Localization\+Script}} \mbox{\hyperlink{class_dialog_script_a609204367a8b18dcf0dc56dcdd875641}{text}}
+\begin{DoxyCompactList}\small\item\em Variable permettant le changement de texte. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_dialog_script_ac64b5d074332fd94f8ae49dc86ac1f30}{Panel\+Dialog}}
+\begin{DoxyCompactList}\small\item\em Panel du didacticiel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dialog_script_ae78f10a23edc16d5ef9a805e8d33af66}{is\+End\+Scene}}
+\begin{DoxyCompactList}\small\item\em Variable vrai si on est à la scène de fin, sinon faux. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_dialog_script_aafe08b7a68788ba7a2db3e4fbad628f1}{tableref}}
+\begin{DoxyCompactList}\small\item\em Tableau contenant les indices a associé avec la classe \mbox{\hyperlink{class_data}{Data}} Pour obtenir le texte. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_dialog_script_aeae1493557d46893c2ea536453190386}{ind}}
+\begin{DoxyCompactList}\small\item\em Indice du texte (à quel texte on est ?). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
-Classe qui gère les dialogues (dialogues, passage au dialogue suivant). Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}} Classes l\textquotesingle{}utilisant \+: / 
+Classe qui gère les dialogues (dialogues, passage au dialogue suivant). Classes utilisées\+: \mbox{\hyperlink{class_manager_audio_script}{Manager\+Audio\+Script}}, \mbox{\hyperlink{class_u_i_script}{UIScript}}, \mbox{\hyperlink{class_manager_script}{Manager\+Script}}, \mbox{\hyperlink{class_localization_script}{Localization\+Script}} Classes l\textquotesingle{}utilisant \+: / 
 
 
 
@@ -78,6 +73,59 @@ Coroutine, permet de mettre en pause la lecture du code dans cette classe puis d
 
 
 Initialisation du premier dialogue. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_dialog_script_aeae1493557d46893c2ea536453190386}\label{class_dialog_script_aeae1493557d46893c2ea536453190386}} 
+\index{DialogScript@{DialogScript}!ind@{ind}}
+\index{ind@{ind}!DialogScript@{DialogScript}}
+\doxysubsubsection{\texorpdfstring{ind}{ind}}
+{\footnotesize\ttfamily int Dialog\+Script.\+ind\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indice du texte (à quel texte on est ?). 
+
+\mbox{\Hypertarget{class_dialog_script_ae78f10a23edc16d5ef9a805e8d33af66}\label{class_dialog_script_ae78f10a23edc16d5ef9a805e8d33af66}} 
+\index{DialogScript@{DialogScript}!isEndScene@{isEndScene}}
+\index{isEndScene@{isEndScene}!DialogScript@{DialogScript}}
+\doxysubsubsection{\texorpdfstring{isEndScene}{isEndScene}}
+{\footnotesize\ttfamily bool Dialog\+Script.\+is\+End\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable vrai si on est à la scène de fin, sinon faux. 
+
+\mbox{\Hypertarget{class_dialog_script_ac64b5d074332fd94f8ae49dc86ac1f30}\label{class_dialog_script_ac64b5d074332fd94f8ae49dc86ac1f30}} 
+\index{DialogScript@{DialogScript}!PanelDialog@{PanelDialog}}
+\index{PanelDialog@{PanelDialog}!DialogScript@{DialogScript}}
+\doxysubsubsection{\texorpdfstring{PanelDialog}{PanelDialog}}
+{\footnotesize\ttfamily Game\+Object Dialog\+Script.\+Panel\+Dialog\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Panel du didacticiel. 
+
+\mbox{\Hypertarget{class_dialog_script_aafe08b7a68788ba7a2db3e4fbad628f1}\label{class_dialog_script_aafe08b7a68788ba7a2db3e4fbad628f1}} 
+\index{DialogScript@{DialogScript}!tableref@{tableref}}
+\index{tableref@{tableref}!DialogScript@{DialogScript}}
+\doxysubsubsection{\texorpdfstring{tableref}{tableref}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Dialog\+Script.\+tableref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tableau contenant les indices a associé avec la classe \mbox{\hyperlink{class_data}{Data}} Pour obtenir le texte. 
+
+\mbox{\Hypertarget{class_dialog_script_a609204367a8b18dcf0dc56dcdd875641}\label{class_dialog_script_a609204367a8b18dcf0dc56dcdd875641}} 
+\index{DialogScript@{DialogScript}!text@{text}}
+\index{text@{text}!DialogScript@{DialogScript}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_localization_script}{Localization\+Script}} Dialog\+Script.\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable permettant le changement de texte. 
 
 
 

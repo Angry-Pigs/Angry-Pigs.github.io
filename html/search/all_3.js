@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['data_31',['Data',['../class_data.html',1,'']]],
-  ['desactivaterb_32',['DesActivateRB',['../class_pig_script.html#aea09279768980c25699b3339b1494759',1,'PigScript']]],
-  ['destroy_33',['Destroy',['../class_pig_script.html#a9848df0c5c307242f45e8d511bdf875a',1,'PigScript']]],
-  ['destroyobjectsound_34',['DestroyObjectSound',['../class_manager_audio_script.html#a9e3e12e1daabbe2b468a1aa7c794e919',1,'ManagerAudioScript']]],
-  ['dialogscript_35',['DialogScript',['../class_dialog_script.html',1,'']]],
-  ['didactscript_36',['DidactScript',['../class_didact_script.html',1,'']]],
-  ['die_37',['Die',['../class_entity.html#afb10403e14873605974a9d61f6cc5001',1,'Entity']]],
-  ['disablebuttons_38',['DisableButtons',['../class_u_i_script.html#ac94c0fec188bb99c82c787507a9b88b4',1,'UIScript']]],
-  ['dotscript_39',['DotScript',['../class_dot_script.html',1,'']]]
+  ['data_52',['Data',['../class_data.html',1,'']]],
+  ['defaultheight_53',['defaultHeight',['../class_camera_size_script.html#aaa32ee91a817209b200a24970775e04d',1,'CameraSizeScript']]],
+  ['defaultwidth_54',['defaultWidth',['../class_camera_size_script.html#a0d3f67c0a67f3171a4ff0a9cfac85df9',1,'CameraSizeScript']]],
+  ['desactivaterb_55',['DesActivateRB',['../class_pig_script.html#aea09279768980c25699b3339b1494759',1,'PigScript']]],
+  ['destroy_56',['Destroy',['../class_pig_script.html#a9848df0c5c307242f45e8d511bdf875a',1,'PigScript']]],
+  ['destroyobjectsound_57',['DestroyObjectSound',['../class_manager_audio_script.html#a9e3e12e1daabbe2b468a1aa7c794e919',1,'ManagerAudioScript']]],
+  ['dialogscript_58',['DialogScript',['../class_dialog_script.html',1,'']]],
+  ['didactscript_59',['DidactScript',['../class_didact_script.html',1,'']]],
+  ['die_60',['Die',['../class_entity.html#afb10403e14873605974a9d61f6cc5001',1,'Entity']]],
+  ['direction_61',['direction',['../class_manager_script.html#adc44cd477ba6f194c9779e71468581ff',1,'ManagerScript']]],
+  ['disablebuttons_62',['DisableButtons',['../class_u_i_script.html#ac94c0fec188bb99c82c787507a9b88b4',1,'UIScript']]],
+  ['distancemax_63',['distanceMax',['../class_manager_script.html#aa8250ef2304a7592b0d850bc58b4cdc7',1,'ManagerScript']]],
+  ['dotmaxscale_64',['dotMaxScale',['../class_trajectory_script.html#a012f66318a3835cc4ce18c3395a02b7c',1,'TrajectoryScript']]],
+  ['dotminscale_65',['dotMinScale',['../class_trajectory_script.html#a18a274eeca80f7e00ec2707281f2b664',1,'TrajectoryScript']]],
+  ['dotprefab_66',['dotPrefab',['../class_trajectory_script.html#a901162c4762dc4f84355d71706d24430',1,'TrajectoryScript']]],
+  ['dotscript_67',['DotScript',['../class_dot_script.html',1,'']]],
+  ['dotslist_68',['dotsList',['../class_trajectory_script.html#aea7bcab959d3325171dbcf6af37264cc',1,'TrajectoryScript']]],
+  ['dotsnumber_69',['dotsNumber',['../class_trajectory_script.html#a5669fd8c6060f31da088bf244b3001d0',1,'TrajectoryScript']]],
+  ['dotspacing_70',['dotSpacing',['../class_trajectory_script.html#a5f79e332b89f11dae2a8c87e65c5275f',1,'TrajectoryScript']]],
+  ['dotsparent_71',['dotsParent',['../class_trajectory_script.html#a129b79bf81bb9761705fca1ce0df1a83',1,'TrajectoryScript']]]
 ];

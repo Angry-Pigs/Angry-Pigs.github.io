@@ -16,6 +16,10 @@ Graphe d\textquotesingle{}héritage de UIScript\+:\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{class_u_i_script_a9bc29f0c0783a3be90dced118e3dbeee}{Increase\+Current\+Enemy}} ()
 \begin{DoxyCompactList}\small\item\em Augmente current\+Enemy de 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_script_ab7d36acfc7500536ec7a62fadac3284b}{Button\+Option}} ()
+\begin{DoxyCompactList}\small\item\em Active le panel Option, désactive le panel Pause. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_script_aa742a2b8062effcffb9820b0357ac3b2}{Back\+Option}} ()
+\begin{DoxyCompactList}\small\item\em Active le panel Pause, désactive le panel Option. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_script_a0412b9d0d8ce14704afa9c2d955bc550}{Button\+Pause}} ()
 \begin{DoxyCompactList}\small\item\em Mets en pause le jeu, active le panel Pause, désactive le panel In\+Game. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_script_a53d2d618ca884999cd33384a8cccaa65}{Button\+Continue}} ()
@@ -46,14 +50,13 @@ void \mbox{\hyperlink{class_u_i_script_a79cb4de88ab2e611400a5b47e48709ba}{Next\+
 \begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}accéder au niveau suivant. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_u_i_script_ab9540005db13a14b39cb163dfca971ba}{Get\+In\+Pause}} ()
 \begin{DoxyCompactList}\small\item\em Getter de la variable in\+Pause. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_u_i_script_ab0d35265d1c8e3ea13e8c71a1d13cc4f}{Set\+In\+Pause}} (bool in\+Pause)
+void \mbox{\hyperlink{class_u_i_script_ab0d35265d1c8e3ea13e8c71a1d13cc4f}{Set\+In\+Pause}} (bool \mbox{\hyperlink{class_u_i_script_a509700642e2e47fcd8c1717f9028df80}{in\+Pause}})
 \begin{DoxyCompactList}\small\item\em Setter de la variable in\+Pause, la change par le paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs publics statiques}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_u_i_script_ac0fa260c0c2b052469d378329d2f2eb5}\label{class_u_i_script_ac0fa260c0c2b052469d378329d2f2eb5}} 
-static \mbox{\hyperlink{class_u_i_script}{UIScript}} {\bfseries Instance}
-\end{DoxyCompactItemize}
+static \mbox{\hyperlink{class_u_i_script}{UIScript}} \mbox{\hyperlink{class_u_i_script_ac0fa260c0c2b052469d378329d2f2eb5}{Instance}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}instance de \mbox{\hyperlink{class_u_i_script}{UIScript}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,84 +67,60 @@ IEnumerator \mbox{\hyperlink{class_u_i_script_a5e95266efdafb099c56300e2b57be061}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_u_i_script_a0ef0bab57ccc5f79dda58acc02c45af6}\label{class_u_i_script_a0ef0bab57ccc5f79dda58acc02c45af6}} 
-Game\+Object {\bfseries panel\+Pause}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a73f21335311fac0a9c3c9decfa2570f6}\label{class_u_i_script_a73f21335311fac0a9c3c9decfa2570f6}} 
-Game\+Object {\bfseries panel\+In\+Game}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a2a3ca2f6ae5c07c31e9ee7489841894b}\label{class_u_i_script_a2a3ca2f6ae5c07c31e9ee7489841894b}} 
-Game\+Object {\bfseries panel\+Victory}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a6e41e4c972808578661509f68dfef75e}\label{class_u_i_script_a6e41e4c972808578661509f68dfef75e}} 
-Game\+Object {\bfseries pig\+Pref}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a98f762f1030341e681de06919eb505b0}\label{class_u_i_script_a98f762f1030341e681de06919eb505b0}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries score\+Txt}
-\item 
-\mbox{\Hypertarget{class_u_i_script_aa6bd29b963cbd1064d1531eadc4f7cae}\label{class_u_i_script_aa6bd29b963cbd1064d1531eadc4f7cae}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries high\+Score\+Txt}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a09ec99d17a0208ba6bad6be771dc3f50}\label{class_u_i_script_a09ec99d17a0208ba6bad6be771dc3f50}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries score\+Txt\+Victory}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a02509bd08cde155f757a4c8d1a2b01ba}\label{class_u_i_script_a02509bd08cde155f757a4c8d1a2b01ba}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries high\+Score\+Txt\+Victory}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a0e3b5e9a369cab5d2f6364cd1e1fc453}\label{class_u_i_script_a0e3b5e9a369cab5d2f6364cd1e1fc453}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries Txt\+Victory}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a0a65236f4142fd83e4a2c258c7ba8c9c}\label{class_u_i_script_a0a65236f4142fd83e4a2c258c7ba8c9c}} 
-int {\bfseries scene\+Ind}
-\item 
-\mbox{\Hypertarget{class_u_i_script_aff4f982a60a6f6ea2b603053edccb825}\label{class_u_i_script_aff4f982a60a6f6ea2b603053edccb825}} 
-int {\bfseries world\+Ind}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a05ab32c5c38e5e2fc3b3008e72d4da5b}\label{class_u_i_script_a05ab32c5c38e5e2fc3b3008e72d4da5b}} 
-int {\bfseries star\+Score}
-\item 
-\mbox{\Hypertarget{class_u_i_script_af5b4a46a9f454fc3d1c8033a598a29bb}\label{class_u_i_script_af5b4a46a9f454fc3d1c8033a598a29bb}} 
-int {\bfseries ind\+Lvl\+Eq}
-\item 
-\mbox{\Hypertarget{class_u_i_script_acde7307f620e5cf6c2a8198107906e33}\label{class_u_i_script_acde7307f620e5cf6c2a8198107906e33}} 
-Image {\bfseries star1}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a0193cdaabd533e874f2117d84476911a}\label{class_u_i_script_a0193cdaabd533e874f2117d84476911a}} 
-Image {\bfseries star2}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a092ea3cc6c5af228388ea278abf0ba81}\label{class_u_i_script_a092ea3cc6c5af228388ea278abf0ba81}} 
-Image {\bfseries star3}
-\item 
-\mbox{\Hypertarget{class_u_i_script_ae489041ff5da92a20c875047fad07884}\label{class_u_i_script_ae489041ff5da92a20c875047fad07884}} 
-Button\mbox{[}$\,$\mbox{]} {\bfseries Buttons\+In\+Play}
-\item 
-\mbox{\Hypertarget{class_u_i_script_aac197ecb2b8bd7f60ce624445dfea19e}\label{class_u_i_script_aac197ecb2b8bd7f60ce624445dfea19e}} 
-Button {\bfseries Button\+Next}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a29a1117721a61163bbad2ad874a2b15b}\label{class_u_i_script_a29a1117721a61163bbad2ad874a2b15b}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries bonus1\+Nb\+Text}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a5a442a3e5d1e226f1a7a0458fa24429e}\label{class_u_i_script_a5a442a3e5d1e226f1a7a0458fa24429e}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries bonus2\+Nb\+Text}
-\item 
-\mbox{\Hypertarget{class_u_i_script_ac6351f7fc51e6338fe350274085bd761}\label{class_u_i_script_ac6351f7fc51e6338fe350274085bd761}} 
-Text\+Mesh\+Pro\+UGUI {\bfseries bonus3\+Nb\+Text}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a591f35d2d7a0fb065052e471f16c88d5}\label{class_u_i_script_a591f35d2d7a0fb065052e471f16c88d5}} 
-Transform {\bfseries New\+Pig\+Pos}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a509700642e2e47fcd8c1717f9028df80}\label{class_u_i_script_a509700642e2e47fcd8c1717f9028df80}} 
-bool {\bfseries in\+Pause} = false
-\item 
-\mbox{\Hypertarget{class_u_i_script_a4d90a67c24377dd9496010353ea93da1}\label{class_u_i_script_a4d90a67c24377dd9496010353ea93da1}} 
-int {\bfseries current\+Score}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a5de7db1dfce69fc0bb446115493a2cb5}\label{class_u_i_script_a5de7db1dfce69fc0bb446115493a2cb5}} 
-bool\mbox{[}$\,$\mbox{]} {\bfseries button\+Actif} = new bool\mbox{[}3\mbox{]}
-\item 
-\mbox{\Hypertarget{class_u_i_script_a7a48487bf01dd3a1bc512e665b3e102e}\label{class_u_i_script_a7a48487bf01dd3a1bc512e665b3e102e}} 
-int {\bfseries current\+Enemy}
-\end{DoxyCompactItemize}
+Game\+Object \mbox{\hyperlink{class_u_i_script_a0ef0bab57ccc5f79dda58acc02c45af6}{panel\+Pause}}
+\begin{DoxyCompactList}\small\item\em Stocke le panel Pause. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_u_i_script_a73f21335311fac0a9c3c9decfa2570f6}{panel\+In\+Game}}
+\begin{DoxyCompactList}\small\item\em Stocke le panel In\+Game. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_u_i_script_a2a3ca2f6ae5c07c31e9ee7489841894b}{panel\+Victory}}
+\begin{DoxyCompactList}\small\item\em Stocke le panel Vixtory. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_u_i_script_afcaa9b7dbf80fdcf29697f3d3e5935e6}{panel\+Option}}
+\begin{DoxyCompactList}\small\item\em Stockele panel Option. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_u_i_script_a6e41e4c972808578661509f68dfef75e}{pig\+Pref}}
+\begin{DoxyCompactList}\small\item\em Stocke le cochon. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_a98f762f1030341e681de06919eb505b0}{score\+Txt}}
+\begin{DoxyCompactList}\small\item\em Stocke sous forme de texte le score. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_aa6bd29b963cbd1064d1531eadc4f7cae}{high\+Score\+Txt}}
+\begin{DoxyCompactList}\small\item\em Stocke sous forme de texte le high\+Score. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_a09ec99d17a0208ba6bad6be771dc3f50}{score\+Txt\+Victory}}
+\begin{DoxyCompactList}\small\item\em Stocke sous forme de texte le score obtenue au cours du lvl dans le panel Victory \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_a02509bd08cde155f757a4c8d1a2b01ba}{high\+Score\+Txt\+Victory}}
+\begin{DoxyCompactList}\small\item\em Stocke sous forme de texte le high\+Score obtenue au cours du lvl dans le panel Victory \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_a0e3b5e9a369cab5d2f6364cd1e1fc453}{Txt\+Victory}}
+\begin{DoxyCompactList}\small\item\em Stocke sous forme de texte \char`\"{}\+Victory\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_u_i_script_a0a65236f4142fd83e4a2c258c7ba8c9c}{scene\+Ind}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}indice de la scène. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_u_i_script_aff4f982a60a6f6ea2b603053edccb825}{world\+Ind}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}indice du monde. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_u_i_script_a05ab32c5c38e5e2fc3b3008e72d4da5b}{star\+Score}}
+\begin{DoxyCompactList}\small\item\em Stockele score attendu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_u_i_script_af5b4a46a9f454fc3d1c8033a598a29bb}{ind\+Lvl\+Eq}}
+\begin{DoxyCompactList}\small\item\em Stocke la valeure de rééquilibrage (pour l\textquotesingle{}indice des niveaux). \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_u_i_script_acde7307f620e5cf6c2a8198107906e33}{star1}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}image de la première étoile. \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_u_i_script_a0193cdaabd533e874f2117d84476911a}{star2}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}image de la deuxième étoile. \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_u_i_script_a092ea3cc6c5af228388ea278abf0ba81}{star3}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}image de la troisième étoile. \end{DoxyCompactList}\item 
+Button\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_u_i_script_ae489041ff5da92a20c875047fad07884}{Buttons\+In\+Play}}
+\begin{DoxyCompactList}\small\item\em Stocke les différents boutons en jeu. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{class_u_i_script_aac197ecb2b8bd7f60ce624445dfea19e}{Button\+Next}}
+\begin{DoxyCompactList}\small\item\em Stocke le bouton Next. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_a29a1117721a61163bbad2ad874a2b15b}{bonus1\+Nb\+Text}}
+\begin{DoxyCompactList}\small\item\em Stocke le texte du nombre d\textquotesingle{}utilisations disponible pour le premier bonus. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_a5a442a3e5d1e226f1a7a0458fa24429e}{bonus2\+Nb\+Text}}
+\begin{DoxyCompactList}\small\item\em Stocke le texte du nombre d\textquotesingle{}utilisations disponible pour le deuxième bonus. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_script_ac6351f7fc51e6338fe350274085bd761}{bonus3\+Nb\+Text}}
+\begin{DoxyCompactList}\small\item\em Stocke le texte du nombre d\textquotesingle{}utilisations disponible pour le troisème bonus. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_u_i_script_a591f35d2d7a0fb065052e471f16c88d5}{New\+Pig\+Pos}}
+\begin{DoxyCompactList}\small\item\em Stocke la position du nouveau cochon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_u_i_script_a509700642e2e47fcd8c1717f9028df80}{in\+Pause}} = false
+\begin{DoxyCompactList}\small\item\em Variable stockant l\textquotesingle{}état du jeu (en pause ou non). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_u_i_script_a4d90a67c24377dd9496010353ea93da1}{current\+Score}}
+\begin{DoxyCompactList}\small\item\em Stocke le score actuel. \end{DoxyCompactList}\item 
+bool\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_u_i_script_a5de7db1dfce69fc0bb446115493a2cb5}{button\+Actif}} = new bool\mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Stocke les boutons actifs (Bonus). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_u_i_script_a7a48487bf01dd3a1bc512e665b3e102e}{current\+Enemy}}
+\begin{DoxyCompactList}\small\item\em Stocke le nombre d\textquotesingle{}ennemies restant. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -159,6 +138,16 @@ Classe \mbox{\hyperlink{class_u_i_script}{UIScript}} qui permet la gestion \+: d
 
 
 Active/désactive les boutons et affiche le HS (HIGH SCORE). 
+
+\mbox{\Hypertarget{class_u_i_script_aa742a2b8062effcffb9820b0357ac3b2}\label{class_u_i_script_aa742a2b8062effcffb9820b0357ac3b2}} 
+\index{UIScript@{UIScript}!BackOption@{BackOption}}
+\index{BackOption@{BackOption}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{BackOption()}{BackOption()}}
+{\footnotesize\ttfamily void UIScript.\+Back\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le panel Pause, désactive le panel Option. 
 
 \mbox{\Hypertarget{class_u_i_script_a1ad275b0aa5b662ef998360fdfb4e127}\label{class_u_i_script_a1ad275b0aa5b662ef998360fdfb4e127}} 
 \index{UIScript@{UIScript}!BirdsRefresh@{BirdsRefresh}}
@@ -229,6 +218,16 @@ Désactive le panel Pause et active le panel In\+Game, enlève le pause du jeu.
 
 
 Charge la scène Menu. 
+
+\mbox{\Hypertarget{class_u_i_script_ab7d36acfc7500536ec7a62fadac3284b}\label{class_u_i_script_ab7d36acfc7500536ec7a62fadac3284b}} 
+\index{UIScript@{UIScript}!ButtonOption@{ButtonOption}}
+\index{ButtonOption@{ButtonOption}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{ButtonOption()}{ButtonOption()}}
+{\footnotesize\ttfamily void UIScript.\+Button\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Active le panel Option, désactive le panel Pause. 
 
 \mbox{\Hypertarget{class_u_i_script_a0412b9d0d8ce14704afa9c2d955bc550}\label{class_u_i_script_a0412b9d0d8ce14704afa9c2d955bc550}} 
 \index{UIScript@{UIScript}!ButtonPause@{ButtonPause}}
@@ -353,6 +352,289 @@ Ajoute au score score\+Add.
 {\em score\+Add} & nombre de point a ajoute au score\\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_u_i_script_a29a1117721a61163bbad2ad874a2b15b}\label{class_u_i_script_a29a1117721a61163bbad2ad874a2b15b}} 
+\index{UIScript@{UIScript}!bonus1NbText@{bonus1NbText}}
+\index{bonus1NbText@{bonus1NbText}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{bonus1NbText}{bonus1NbText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+bonus1\+Nb\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le texte du nombre d\textquotesingle{}utilisations disponible pour le premier bonus. 
+
+\mbox{\Hypertarget{class_u_i_script_a5a442a3e5d1e226f1a7a0458fa24429e}\label{class_u_i_script_a5a442a3e5d1e226f1a7a0458fa24429e}} 
+\index{UIScript@{UIScript}!bonus2NbText@{bonus2NbText}}
+\index{bonus2NbText@{bonus2NbText}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{bonus2NbText}{bonus2NbText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+bonus2\+Nb\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le texte du nombre d\textquotesingle{}utilisations disponible pour le deuxième bonus. 
+
+\mbox{\Hypertarget{class_u_i_script_ac6351f7fc51e6338fe350274085bd761}\label{class_u_i_script_ac6351f7fc51e6338fe350274085bd761}} 
+\index{UIScript@{UIScript}!bonus3NbText@{bonus3NbText}}
+\index{bonus3NbText@{bonus3NbText}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{bonus3NbText}{bonus3NbText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+bonus3\+Nb\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le texte du nombre d\textquotesingle{}utilisations disponible pour le troisème bonus. 
+
+\mbox{\Hypertarget{class_u_i_script_a5de7db1dfce69fc0bb446115493a2cb5}\label{class_u_i_script_a5de7db1dfce69fc0bb446115493a2cb5}} 
+\index{UIScript@{UIScript}!buttonActif@{buttonActif}}
+\index{buttonActif@{buttonActif}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{buttonActif}{buttonActif}}
+{\footnotesize\ttfamily bool \mbox{[}$\,$\mbox{]} UIScript.\+button\+Actif = new bool\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke les boutons actifs (Bonus). 
+
+\mbox{\Hypertarget{class_u_i_script_aac197ecb2b8bd7f60ce624445dfea19e}\label{class_u_i_script_aac197ecb2b8bd7f60ce624445dfea19e}} 
+\index{UIScript@{UIScript}!ButtonNext@{ButtonNext}}
+\index{ButtonNext@{ButtonNext}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{ButtonNext}{ButtonNext}}
+{\footnotesize\ttfamily Button UIScript.\+Button\+Next\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le bouton Next. 
+
+\mbox{\Hypertarget{class_u_i_script_ae489041ff5da92a20c875047fad07884}\label{class_u_i_script_ae489041ff5da92a20c875047fad07884}} 
+\index{UIScript@{UIScript}!ButtonsInPlay@{ButtonsInPlay}}
+\index{ButtonsInPlay@{ButtonsInPlay}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{ButtonsInPlay}{ButtonsInPlay}}
+{\footnotesize\ttfamily Button \mbox{[}$\,$\mbox{]} UIScript.\+Buttons\+In\+Play\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke les différents boutons en jeu. 
+
+\mbox{\Hypertarget{class_u_i_script_a7a48487bf01dd3a1bc512e665b3e102e}\label{class_u_i_script_a7a48487bf01dd3a1bc512e665b3e102e}} 
+\index{UIScript@{UIScript}!currentEnemy@{currentEnemy}}
+\index{currentEnemy@{currentEnemy}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{currentEnemy}{currentEnemy}}
+{\footnotesize\ttfamily int UIScript.\+current\+Enemy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le nombre d\textquotesingle{}ennemies restant. 
+
+\mbox{\Hypertarget{class_u_i_script_a4d90a67c24377dd9496010353ea93da1}\label{class_u_i_script_a4d90a67c24377dd9496010353ea93da1}} 
+\index{UIScript@{UIScript}!currentScore@{currentScore}}
+\index{currentScore@{currentScore}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{currentScore}{currentScore}}
+{\footnotesize\ttfamily int UIScript.\+current\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le score actuel. 
+
+\mbox{\Hypertarget{class_u_i_script_aa6bd29b963cbd1064d1531eadc4f7cae}\label{class_u_i_script_aa6bd29b963cbd1064d1531eadc4f7cae}} 
+\index{UIScript@{UIScript}!highScoreTxt@{highScoreTxt}}
+\index{highScoreTxt@{highScoreTxt}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{highScoreTxt}{highScoreTxt}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+high\+Score\+Txt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke sous forme de texte le high\+Score. 
+
+\mbox{\Hypertarget{class_u_i_script_a02509bd08cde155f757a4c8d1a2b01ba}\label{class_u_i_script_a02509bd08cde155f757a4c8d1a2b01ba}} 
+\index{UIScript@{UIScript}!highScoreTxtVictory@{highScoreTxtVictory}}
+\index{highScoreTxtVictory@{highScoreTxtVictory}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{highScoreTxtVictory}{highScoreTxtVictory}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+high\+Score\+Txt\+Victory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke sous forme de texte le high\+Score obtenue au cours du lvl dans le panel Victory 
+
+\mbox{\Hypertarget{class_u_i_script_af5b4a46a9f454fc3d1c8033a598a29bb}\label{class_u_i_script_af5b4a46a9f454fc3d1c8033a598a29bb}} 
+\index{UIScript@{UIScript}!indLvlEq@{indLvlEq}}
+\index{indLvlEq@{indLvlEq}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{indLvlEq}{indLvlEq}}
+{\footnotesize\ttfamily int UIScript.\+ind\+Lvl\+Eq\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke la valeure de rééquilibrage (pour l\textquotesingle{}indice des niveaux). 
+
+\mbox{\Hypertarget{class_u_i_script_a509700642e2e47fcd8c1717f9028df80}\label{class_u_i_script_a509700642e2e47fcd8c1717f9028df80}} 
+\index{UIScript@{UIScript}!inPause@{inPause}}
+\index{inPause@{inPause}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{inPause}{inPause}}
+{\footnotesize\ttfamily bool UIScript.\+in\+Pause = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable stockant l\textquotesingle{}état du jeu (en pause ou non). 
+
+\mbox{\Hypertarget{class_u_i_script_ac0fa260c0c2b052469d378329d2f2eb5}\label{class_u_i_script_ac0fa260c0c2b052469d378329d2f2eb5}} 
+\index{UIScript@{UIScript}!Instance@{Instance}}
+\index{Instance@{Instance}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_i_script}{UIScript}} UIScript.\+Instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stocke l\textquotesingle{}instance de \mbox{\hyperlink{class_u_i_script}{UIScript}}. 
+
+\mbox{\Hypertarget{class_u_i_script_a591f35d2d7a0fb065052e471f16c88d5}\label{class_u_i_script_a591f35d2d7a0fb065052e471f16c88d5}} 
+\index{UIScript@{UIScript}!NewPigPos@{NewPigPos}}
+\index{NewPigPos@{NewPigPos}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{NewPigPos}{NewPigPos}}
+{\footnotesize\ttfamily Transform UIScript.\+New\+Pig\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke la position du nouveau cochon. 
+
+\mbox{\Hypertarget{class_u_i_script_a73f21335311fac0a9c3c9decfa2570f6}\label{class_u_i_script_a73f21335311fac0a9c3c9decfa2570f6}} 
+\index{UIScript@{UIScript}!panelInGame@{panelInGame}}
+\index{panelInGame@{panelInGame}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{panelInGame}{panelInGame}}
+{\footnotesize\ttfamily Game\+Object UIScript.\+panel\+In\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le panel In\+Game. 
+
+\mbox{\Hypertarget{class_u_i_script_afcaa9b7dbf80fdcf29697f3d3e5935e6}\label{class_u_i_script_afcaa9b7dbf80fdcf29697f3d3e5935e6}} 
+\index{UIScript@{UIScript}!panelOption@{panelOption}}
+\index{panelOption@{panelOption}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{panelOption}{panelOption}}
+{\footnotesize\ttfamily Game\+Object UIScript.\+panel\+Option\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stockele panel Option. 
+
+\mbox{\Hypertarget{class_u_i_script_a0ef0bab57ccc5f79dda58acc02c45af6}\label{class_u_i_script_a0ef0bab57ccc5f79dda58acc02c45af6}} 
+\index{UIScript@{UIScript}!panelPause@{panelPause}}
+\index{panelPause@{panelPause}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{panelPause}{panelPause}}
+{\footnotesize\ttfamily Game\+Object UIScript.\+panel\+Pause\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le panel Pause. 
+
+\mbox{\Hypertarget{class_u_i_script_a2a3ca2f6ae5c07c31e9ee7489841894b}\label{class_u_i_script_a2a3ca2f6ae5c07c31e9ee7489841894b}} 
+\index{UIScript@{UIScript}!panelVictory@{panelVictory}}
+\index{panelVictory@{panelVictory}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{panelVictory}{panelVictory}}
+{\footnotesize\ttfamily Game\+Object UIScript.\+panel\+Victory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le panel Vixtory. 
+
+\mbox{\Hypertarget{class_u_i_script_a6e41e4c972808578661509f68dfef75e}\label{class_u_i_script_a6e41e4c972808578661509f68dfef75e}} 
+\index{UIScript@{UIScript}!pigPref@{pigPref}}
+\index{pigPref@{pigPref}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{pigPref}{pigPref}}
+{\footnotesize\ttfamily Game\+Object UIScript.\+pig\+Pref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le cochon. 
+
+\mbox{\Hypertarget{class_u_i_script_a0a65236f4142fd83e4a2c258c7ba8c9c}\label{class_u_i_script_a0a65236f4142fd83e4a2c258c7ba8c9c}} 
+\index{UIScript@{UIScript}!sceneInd@{sceneInd}}
+\index{sceneInd@{sceneInd}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{sceneInd}{sceneInd}}
+{\footnotesize\ttfamily int UIScript.\+scene\+Ind\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke l\textquotesingle{}indice de la scène. 
+
+\mbox{\Hypertarget{class_u_i_script_a98f762f1030341e681de06919eb505b0}\label{class_u_i_script_a98f762f1030341e681de06919eb505b0}} 
+\index{UIScript@{UIScript}!scoreTxt@{scoreTxt}}
+\index{scoreTxt@{scoreTxt}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{scoreTxt}{scoreTxt}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+score\+Txt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke sous forme de texte le score. 
+
+\mbox{\Hypertarget{class_u_i_script_a09ec99d17a0208ba6bad6be771dc3f50}\label{class_u_i_script_a09ec99d17a0208ba6bad6be771dc3f50}} 
+\index{UIScript@{UIScript}!scoreTxtVictory@{scoreTxtVictory}}
+\index{scoreTxtVictory@{scoreTxtVictory}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{scoreTxtVictory}{scoreTxtVictory}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+score\+Txt\+Victory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke sous forme de texte le score obtenue au cours du lvl dans le panel Victory 
+
+\mbox{\Hypertarget{class_u_i_script_acde7307f620e5cf6c2a8198107906e33}\label{class_u_i_script_acde7307f620e5cf6c2a8198107906e33}} 
+\index{UIScript@{UIScript}!star1@{star1}}
+\index{star1@{star1}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{star1}{star1}}
+{\footnotesize\ttfamily Image UIScript.\+star1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke l\textquotesingle{}image de la première étoile. 
+
+\mbox{\Hypertarget{class_u_i_script_a0193cdaabd533e874f2117d84476911a}\label{class_u_i_script_a0193cdaabd533e874f2117d84476911a}} 
+\index{UIScript@{UIScript}!star2@{star2}}
+\index{star2@{star2}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{star2}{star2}}
+{\footnotesize\ttfamily Image UIScript.\+star2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke l\textquotesingle{}image de la deuxième étoile. 
+
+\mbox{\Hypertarget{class_u_i_script_a092ea3cc6c5af228388ea278abf0ba81}\label{class_u_i_script_a092ea3cc6c5af228388ea278abf0ba81}} 
+\index{UIScript@{UIScript}!star3@{star3}}
+\index{star3@{star3}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{star3}{star3}}
+{\footnotesize\ttfamily Image UIScript.\+star3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke l\textquotesingle{}image de la troisième étoile. 
+
+\mbox{\Hypertarget{class_u_i_script_a05ab32c5c38e5e2fc3b3008e72d4da5b}\label{class_u_i_script_a05ab32c5c38e5e2fc3b3008e72d4da5b}} 
+\index{UIScript@{UIScript}!starScore@{starScore}}
+\index{starScore@{starScore}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{starScore}{starScore}}
+{\footnotesize\ttfamily int UIScript.\+star\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stockele score attendu 
+
+\mbox{\Hypertarget{class_u_i_script_a0e3b5e9a369cab5d2f6364cd1e1fc453}\label{class_u_i_script_a0e3b5e9a369cab5d2f6364cd1e1fc453}} 
+\index{UIScript@{UIScript}!TxtVictory@{TxtVictory}}
+\index{TxtVictory@{TxtVictory}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{TxtVictory}{TxtVictory}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIScript.\+Txt\+Victory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke sous forme de texte \char`\"{}\+Victory\char`\"{}. 
+
+\mbox{\Hypertarget{class_u_i_script_aff4f982a60a6f6ea2b603053edccb825}\label{class_u_i_script_aff4f982a60a6f6ea2b603053edccb825}} 
+\index{UIScript@{UIScript}!worldInd@{worldInd}}
+\index{worldInd@{worldInd}!UIScript@{UIScript}}
+\doxysubsubsection{\texorpdfstring{worldInd}{worldInd}}
+{\footnotesize\ttfamily int UIScript.\+world\+Ind\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke l\textquotesingle{}indice du monde. 
+
 
 
 La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}

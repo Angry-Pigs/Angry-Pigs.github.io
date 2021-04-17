@@ -14,6 +14,8 @@ Graphe d\textquotesingle{}héritage de Menu\+Script\+:\begin{figure}[H]
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_menu_script_ab52292fd759bd212bd88efc5506899d7}{Button\+Quit}} ()
+\begin{DoxyCompactList}\small\item\em Ferme le jeu \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_script_a1c4098a9dc10b2288594438329545f99}{Button\+Opt}} ()
 \begin{DoxyCompactList}\small\item\em Active le panel Option, désactive le panel Menu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_script_a26d3912cb180534629ccc0dee470b0b4}{Button\+Play}} ()
@@ -22,10 +24,6 @@ void \mbox{\hyperlink{class_menu_script_ae67ff2c0b5c176e9307e04b5493a403c}{Butto
 \begin{DoxyCompactList}\small\item\em Active le panel Menu, désactive le panel Option. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_script_ae12744a9dabc39678b148efd6926396b}{Button\+Stop\+Play}} ()
 \begin{DoxyCompactList}\small\item\em Active le panel Menu, désactive le panel World. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_menu_script_a46001cd68187e16d749f1234b94f8153}{Button\+On}} ()
-\begin{DoxyCompactList}\small\item\em Active le son (jouer un son pour indiquer le bon fonctionnement, la musique de fond commence). \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_menu_script_a6a500284dc625b9df240ad7044137b72}{Button\+Off}} ()
-\begin{DoxyCompactList}\small\item\em Désactive le son. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_script_a9677a4d51cd9a7ffe1dc2600f0fb7b02}{Button\+Back\+World}} (int ind)
 \begin{DoxyCompactList}\small\item\em Désactive le panel Lvl numero ind et active le panel World. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
@@ -44,36 +42,26 @@ void \mbox{\hyperlink{class_menu_script_adb71c17c7401a5866eebf57b315d3683}{Creat
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}\label{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}} 
-Game\+Object {\bfseries panel\+World}
-\item 
-\mbox{\Hypertarget{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}\label{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}} 
-Game\+Object {\bfseries panel\+Option}
-\item 
-\mbox{\Hypertarget{class_menu_script_a909d078ab222ad770bd8db8617d1811b}\label{class_menu_script_a909d078ab222ad770bd8db8617d1811b}} 
-Game\+Object {\bfseries panel\+Menu}
-\item 
-\mbox{\Hypertarget{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}\label{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}} 
-Game\+Object {\bfseries prfb\+Button\+Lvl}
-\item 
-\mbox{\Hypertarget{class_menu_script_a8e19e9da924962de57047247f356a554}\label{class_menu_script_a8e19e9da924962de57047247f356a554}} 
-Game\+Object {\bfseries prfb\+Button\+World}
-\item 
-\mbox{\Hypertarget{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}\label{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}} 
-Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries panel\+Lvl}
-\item 
-\mbox{\Hypertarget{class_menu_script_afab55a518154fdd5227539362ce1b8e9}\label{class_menu_script_afab55a518154fdd5227539362ce1b8e9}} 
-Transform {\bfseries panel\+World\+Place}
-\item 
-\mbox{\Hypertarget{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}\label{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}} 
-Transform\mbox{[}$\,$\mbox{]} {\bfseries panel\+Lvl\+Place}
-\item 
-\mbox{\Hypertarget{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}\label{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}} 
-int {\bfseries nb\+World}
-\item 
-\mbox{\Hypertarget{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}\label{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}} 
-int {\bfseries nb\+Lvl}
-\end{DoxyCompactItemize}
+Game\+Object \mbox{\hyperlink{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}{panel\+World}}
+\begin{DoxyCompactList}\small\item\em Stocke le panel World. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}{panel\+Option}}
+\begin{DoxyCompactList}\small\item\em Stocke le panel Option. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_menu_script_a909d078ab222ad770bd8db8617d1811b}{panel\+Menu}}
+\begin{DoxyCompactList}\small\item\em Stocke le panel Menu. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}{prfb\+Button\+Lvl}}
+\begin{DoxyCompactList}\small\item\em Stocke le prefab bouton lvl. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_menu_script_a8e19e9da924962de57047247f356a554}{prfb\+Button\+World}}
+\begin{DoxyCompactList}\small\item\em Stocke le prefab bouton world. \end{DoxyCompactList}\item 
+Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}{panel\+Lvl}}
+\begin{DoxyCompactList}\small\item\em Stocke les panels Lvl. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_menu_script_afab55a518154fdd5227539362ce1b8e9}{panel\+World\+Place}}
+\begin{DoxyCompactList}\small\item\em Stocke Panel où les boutons World sont instanciés. \end{DoxyCompactList}\item 
+Transform\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}{panel\+Lvl\+Place}}
+\begin{DoxyCompactList}\small\item\em Stocke les panel où les boutons niveau sont instanciés. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}{nb\+World}}
+\begin{DoxyCompactList}\small\item\em Stocke le nombre de monde. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}{nb\+Lvl}}
+\begin{DoxyCompactList}\small\item\em Stocke le nombre de niveau. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -112,26 +100,6 @@ Charge la scène ind (Lvl correspondant).
 {\em ind} & indice du lvl\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_menu_script_a6a500284dc625b9df240ad7044137b72}\label{class_menu_script_a6a500284dc625b9df240ad7044137b72}} 
-\index{MenuScript@{MenuScript}!ButtonOff@{ButtonOff}}
-\index{ButtonOff@{ButtonOff}!MenuScript@{MenuScript}}
-\doxysubsubsection{\texorpdfstring{ButtonOff()}{ButtonOff()}}
-{\footnotesize\ttfamily void Menu\+Script.\+Button\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Désactive le son. 
-
-\mbox{\Hypertarget{class_menu_script_a46001cd68187e16d749f1234b94f8153}\label{class_menu_script_a46001cd68187e16d749f1234b94f8153}} 
-\index{MenuScript@{MenuScript}!ButtonOn@{ButtonOn}}
-\index{ButtonOn@{ButtonOn}!MenuScript@{MenuScript}}
-\doxysubsubsection{\texorpdfstring{ButtonOn()}{ButtonOn()}}
-{\footnotesize\ttfamily void Menu\+Script.\+Button\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Active le son (jouer un son pour indiquer le bon fonctionnement, la musique de fond commence). 
-
 \mbox{\Hypertarget{class_menu_script_a1c4098a9dc10b2288594438329545f99}\label{class_menu_script_a1c4098a9dc10b2288594438329545f99}} 
 \index{MenuScript@{MenuScript}!ButtonOpt@{ButtonOpt}}
 \index{ButtonOpt@{ButtonOpt}!MenuScript@{MenuScript}}
@@ -151,6 +119,16 @@ Active le panel Option, désactive le panel Menu.
 
 
 Active le panel World, désactive le panel Menu. 
+
+\mbox{\Hypertarget{class_menu_script_ab52292fd759bd212bd88efc5506899d7}\label{class_menu_script_ab52292fd759bd212bd88efc5506899d7}} 
+\index{MenuScript@{MenuScript}!ButtonQuit@{ButtonQuit}}
+\index{ButtonQuit@{ButtonQuit}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{ButtonQuit()}{ButtonQuit()}}
+{\footnotesize\ttfamily void Menu\+Script.\+Button\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ferme le jeu 
 
 \mbox{\Hypertarget{class_menu_script_ae67ff2c0b5c176e9307e04b5493a403c}\label{class_menu_script_ae67ff2c0b5c176e9307e04b5493a403c}} 
 \index{MenuScript@{MenuScript}!ButtonStopOpt@{ButtonStopOpt}}
@@ -221,6 +199,109 @@ Création des boutons Lvl dans chaque panel Lvl, définit leur action lors de l\
 
 
 Si c\textquotesingle{}est le premier lancé du jeu, instancie et déclare chaque variable en mémoire, appel la fonction \mbox{\hyperlink{class_menu_script_adb71c17c7401a5866eebf57b315d3683}{Create\+Buttons()}}. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}\label{class_menu_script_a0b9f34cce5a797ed27cd4581fe0fe6ae}} 
+\index{MenuScript@{MenuScript}!nbLvl@{nbLvl}}
+\index{nbLvl@{nbLvl}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{nbLvl}{nbLvl}}
+{\footnotesize\ttfamily int Menu\+Script.\+nb\+Lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le nombre de niveau. 
+
+\mbox{\Hypertarget{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}\label{class_menu_script_a93aadc624d9eeb4a3b0275ccecea43a7}} 
+\index{MenuScript@{MenuScript}!nbWorld@{nbWorld}}
+\index{nbWorld@{nbWorld}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{nbWorld}{nbWorld}}
+{\footnotesize\ttfamily int Menu\+Script.\+nb\+World\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le nombre de monde. 
+
+\mbox{\Hypertarget{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}\label{class_menu_script_a98dac0531c2a2864de7bce03bf47d4cd}} 
+\index{MenuScript@{MenuScript}!panelLvl@{panelLvl}}
+\index{panelLvl@{panelLvl}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{panelLvl}{panelLvl}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Menu\+Script.\+panel\+Lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke les panels Lvl. 
+
+\mbox{\Hypertarget{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}\label{class_menu_script_a5724944ea7c7705c4d5c09b2715b4976}} 
+\index{MenuScript@{MenuScript}!panelLvlPlace@{panelLvlPlace}}
+\index{panelLvlPlace@{panelLvlPlace}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{panelLvlPlace}{panelLvlPlace}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Menu\+Script.\+panel\+Lvl\+Place\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke les panel où les boutons niveau sont instanciés. 
+
+\mbox{\Hypertarget{class_menu_script_a909d078ab222ad770bd8db8617d1811b}\label{class_menu_script_a909d078ab222ad770bd8db8617d1811b}} 
+\index{MenuScript@{MenuScript}!panelMenu@{panelMenu}}
+\index{panelMenu@{panelMenu}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{panelMenu}{panelMenu}}
+{\footnotesize\ttfamily Game\+Object Menu\+Script.\+panel\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le panel Menu. 
+
+\mbox{\Hypertarget{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}\label{class_menu_script_abbc984ccc6007679f75c4c4ef61c7118}} 
+\index{MenuScript@{MenuScript}!panelOption@{panelOption}}
+\index{panelOption@{panelOption}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{panelOption}{panelOption}}
+{\footnotesize\ttfamily Game\+Object Menu\+Script.\+panel\+Option\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le panel Option. 
+
+\mbox{\Hypertarget{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}\label{class_menu_script_ac67d509dbd4fbc7ea2ab001d64cdffd5}} 
+\index{MenuScript@{MenuScript}!panelWorld@{panelWorld}}
+\index{panelWorld@{panelWorld}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{panelWorld}{panelWorld}}
+{\footnotesize\ttfamily Game\+Object Menu\+Script.\+panel\+World\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le panel World. 
+
+\mbox{\Hypertarget{class_menu_script_afab55a518154fdd5227539362ce1b8e9}\label{class_menu_script_afab55a518154fdd5227539362ce1b8e9}} 
+\index{MenuScript@{MenuScript}!panelWorldPlace@{panelWorldPlace}}
+\index{panelWorldPlace@{panelWorldPlace}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{panelWorldPlace}{panelWorldPlace}}
+{\footnotesize\ttfamily Transform Menu\+Script.\+panel\+World\+Place\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke Panel où les boutons World sont instanciés. 
+
+\mbox{\Hypertarget{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}\label{class_menu_script_a53a814ba13956bf994cbea9147bbec2b}} 
+\index{MenuScript@{MenuScript}!prfbButtonLvl@{prfbButtonLvl}}
+\index{prfbButtonLvl@{prfbButtonLvl}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{prfbButtonLvl}{prfbButtonLvl}}
+{\footnotesize\ttfamily Game\+Object Menu\+Script.\+prfb\+Button\+Lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le prefab bouton lvl. 
+
+\mbox{\Hypertarget{class_menu_script_a8e19e9da924962de57047247f356a554}\label{class_menu_script_a8e19e9da924962de57047247f356a554}} 
+\index{MenuScript@{MenuScript}!prfbButtonWorld@{prfbButtonWorld}}
+\index{prfbButtonWorld@{prfbButtonWorld}!MenuScript@{MenuScript}}
+\doxysubsubsection{\texorpdfstring{prfbButtonWorld}{prfbButtonWorld}}
+{\footnotesize\ttfamily Game\+Object Menu\+Script.\+prfb\+Button\+World\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le prefab bouton world. 
 
 
 

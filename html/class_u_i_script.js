@@ -1,6 +1,7 @@
 var class_u_i_script =
 [
     [ "Awake", "class_u_i_script.html#a4ee3b064173a413ebf77e4cb39241f23", null ],
+    [ "BackOption", "class_u_i_script.html#aa742a2b8062effcffb9820b0357ac3b2", null ],
     [ "BirdsRefresh", "class_u_i_script.html#a1ad275b0aa5b662ef998360fdfb4e127", null ],
     [ "BonusAdd", "class_u_i_script.html#aef48d5460020b8145115f648d58c11a3", null ],
     [ "ButtonBonus1", "class_u_i_script.html#a3ea7e4596f672c61601f8b5271f9bcec", null ],
@@ -8,6 +9,7 @@ var class_u_i_script =
     [ "ButtonBonus3", "class_u_i_script.html#ab9d82abaad502480eae35df6241709c8", null ],
     [ "ButtonContinue", "class_u_i_script.html#a53d2d618ca884999cd33384a8cccaa65", null ],
     [ "ButtonMenu", "class_u_i_script.html#ac97fed5fd9d0dcc929ead7fd67f60a47", null ],
+    [ "ButtonOption", "class_u_i_script.html#ab7d36acfc7500536ec7a62fadac3284b", null ],
     [ "ButtonPause", "class_u_i_script.html#a0412b9d0d8ce14704afa9c2d955bc550", null ],
     [ "ButtonRestart", "class_u_i_script.html#a979f1124d7a575d7ec0ec4db7c632ea7", null ],
     [ "CorWin", "class_u_i_script.html#a5e95266efdafb099c56300e2b57be061", null ],
@@ -34,6 +36,7 @@ var class_u_i_script =
     [ "Instance", "class_u_i_script.html#ac0fa260c0c2b052469d378329d2f2eb5", null ],
     [ "NewPigPos", "class_u_i_script.html#a591f35d2d7a0fb065052e471f16c88d5", null ],
     [ "panelInGame", "class_u_i_script.html#a73f21335311fac0a9c3c9decfa2570f6", null ],
+    [ "panelOption", "class_u_i_script.html#afcaa9b7dbf80fdcf29697f3d3e5935e6", null ],
     [ "panelPause", "class_u_i_script.html#a0ef0bab57ccc5f79dda58acc02c45af6", null ],
     [ "panelVictory", "class_u_i_script.html#a2a3ca2f6ae5c07c31e9ee7489841894b", null ],
     [ "pigPref", "class_u_i_script.html#a6e41e4c972808578661509f68dfef75e", null ],

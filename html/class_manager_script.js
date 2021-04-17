@@ -10,7 +10,6 @@ var class_manager_script =
     [ "StopDrag", "class_manager_script.html#a0af48f9071772bdb91b77314f23d86a3", null ],
     [ "Update", "class_manager_script.html#ab58182b7b824eedad9f8e57f141e7236", null ],
     [ "cam", "class_manager_script.html#aac4be70984f594d0c36a8d25f302493f", null ],
-    [ "currentDist", "class_manager_script.html#a85d2d2db91406314298367db051d8351", null ],
     [ "direction", "class_manager_script.html#adc44cd477ba6f194c9779e71468581ff", null ],
     [ "distanceMax", "class_manager_script.html#aa8250ef2304a7592b0d850bc58b4cdc7", null ],
     [ "endPoint", "class_manager_script.html#a289c086d331364b0a3bc5b0f40d78e6f", null ],

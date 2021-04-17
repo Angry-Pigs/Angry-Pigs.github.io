@@ -19,6 +19,7 @@ var hierarchy =
       [ "ParallaxScript", "class_parallax_script.html", null ],
       [ "PigScript", "class_pig_script.html", null ],
       [ "SlingShotScript", "class_sling_shot_script.html", null ],
+      [ "SoundChangeScript", "class_sound_change_script.html", null ],
       [ "TrajectoryScript", "class_trajectory_script.html", null ],
       [ "UIScript", "class_u_i_script.html", null ]
     ] ]

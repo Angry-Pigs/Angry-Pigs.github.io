@@ -2,10 +2,9 @@ var class_menu_script =
 [
     [ "ButtonBackWorld", "class_menu_script.html#a9677a4d51cd9a7ffe1dc2600f0fb7b02", null ],
     [ "ButtonLvl", "class_menu_script.html#a48312f5d0b9a5a2eeaed7812b3668506", null ],
-    [ "ButtonOff", "class_menu_script.html#a6a500284dc625b9df240ad7044137b72", null ],
-    [ "ButtonOn", "class_menu_script.html#a46001cd68187e16d749f1234b94f8153", null ],
     [ "ButtonOpt", "class_menu_script.html#a1c4098a9dc10b2288594438329545f99", null ],
     [ "ButtonPlay", "class_menu_script.html#a26d3912cb180534629ccc0dee470b0b4", null ],
+    [ "ButtonQuit", "class_menu_script.html#ab52292fd759bd212bd88efc5506899d7", null ],
     [ "ButtonStopOpt", "class_menu_script.html#ae67ff2c0b5c176e9307e04b5493a403c", null ],
     [ "ButtonStopPlay", "class_menu_script.html#ae12744a9dabc39678b148efd6926396b", null ],
     [ "ButtonWorld", "class_menu_script.html#a91f97052d34d0863da0838db9d36b63a", null ],

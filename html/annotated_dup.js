@@ -18,6 +18,7 @@ var annotated_dup =
     [ "ParallaxScript", "class_parallax_script.html", "class_parallax_script" ],
     [ "PigScript", "class_pig_script.html", "class_pig_script" ],
     [ "SlingShotScript", "class_sling_shot_script.html", "class_sling_shot_script" ],
+    [ "SoundChangeScript", "class_sound_change_script.html", "class_sound_change_script" ],
     [ "TrajectoryScript", "class_trajectory_script.html", "class_trajectory_script" ],
     [ "UIScript", "class_u_i_script.html", "class_u_i_script" ]
 ];
