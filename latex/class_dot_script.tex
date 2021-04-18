@@ -20,13 +20,6 @@ void \mbox{\hyperlink{class_dot_script_a2b4f5b0b69940bb7ce15122cd67dca39}{Setis\
 \begin{DoxyCompactList}\small\item\em Setter du booléen is\+Activate, remplace la valeure de is\+Activate. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_dot_script_adbbfd95914570141427a85a6603daca5}{Getis\+Collide}} ()
 \begin{DoxyCompactList}\small\item\em Getter du booléen is\+Collide. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Attributs publics}
-\begin{DoxyCompactItemize}
-\item 
-bool \mbox{\hyperlink{class_dot_script_a2f3dee9494ceead64b142703b0ac245b}{is\+Activate}}
-\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}état d\textquotesingle{}activation (visible ou pas ?). \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_dot_script_a39e4a2c07b01571c61a048371af560d8}{is\+Collide}}
-\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}état de collision (collisionne ou pas ?). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,6 +33,13 @@ void \mbox{\hyperlink{class_dot_script_a509752d91e32609c5db0cae19eda0c61}{On\+Tr
 \begin{DoxyCompactList}\small\item\em Lorsque le point sort de collision le point est actif (en fonction des points précédents). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_dot_script_a3b9558bcbf618948a9a83618cafc7c7d}{On\+Trigger\+Stay2D}} (Collider2D col)
 \begin{DoxyCompactList}\small\item\em Lorsque le point reste en collision le point est désactivé. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_dot_script_a2f3dee9494ceead64b142703b0ac245b}{is\+Activate}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}état d\textquotesingle{}activation (visible ou pas ?). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dot_script_a39e4a2c07b01571c61a048371af560d8}{is\+Collide}}
+\begin{DoxyCompactList}\small\item\em Stocke l\textquotesingle{}état de collision (collisionne ou pas ?). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -161,7 +161,7 @@ Active ou désactive le rendu visuel du point.
 \index{DotScript@{DotScript}!isActivate@{isActivate}}
 \index{isActivate@{isActivate}!DotScript@{DotScript}}
 \doxysubsubsection{\texorpdfstring{isActivate}{isActivate}}
-{\footnotesize\ttfamily bool Dot\+Script.\+is\+Activate}
+{\footnotesize\ttfamily bool Dot\+Script.\+is\+Activate\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -171,7 +171,7 @@ Stocke l\textquotesingle{}état d\textquotesingle{}activation (visible ou pas ?)
 \index{DotScript@{DotScript}!isCollide@{isCollide}}
 \index{isCollide@{isCollide}!DotScript@{DotScript}}
 \doxysubsubsection{\texorpdfstring{isCollide}{isCollide}}
-{\footnotesize\ttfamily bool Dot\+Script.\+is\+Collide}
+{\footnotesize\ttfamily bool Dot\+Script.\+is\+Collide\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
